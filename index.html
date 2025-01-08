@@ -26,6 +26,17 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .hide-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+  </style>
 
 </head>
 
@@ -42,7 +53,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li class="dropdown"><a href="#"><span>Blogs</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -99,7 +110,7 @@
           <!-- Blog Posts Section -->
           <section id="blog-posts" class="blog-posts section">
 
-            <div class="container">
+            <div class="container vh-100 hide-scrollbar" style="overflow-y:scroll; overflow-x:hidden;">
               <div class="row gy-4">
 
                 <div class="col-lg-6">
@@ -310,15 +321,17 @@
                     </div>
 
                   </article>
-                </div><!-- End post list item -->
+                </div>
+                <!-- End post list item -->
 
               </div>
             </div>
 
-          </section><!-- /Blog Posts Section -->
+          </section>
+          <!-- /Blog Posts Section -->
 
           <!-- Blog Pagination Section -->
-          <section id="blog-pagination" class="blog-pagination section">
+          <!-- <section id="blog-pagination" class="blog-pagination section">
 
             <div class="container">
               <div class="d-flex justify-content-center">
@@ -335,7 +348,8 @@
               </div>
             </div>
 
-          </section><!-- /Blog Pagination Section -->
+          </section> -->
+          <!-- /Blog Pagination Section -->
 
         </div>
 
@@ -411,13 +425,14 @@
                 </div>
               </div><!-- End recent post item-->
 
-              <div class="post-item">
+              <!-- <div class="post-item">
                 <img src="/assets/img/blog/blog-recent-5.jpg" alt="" class="flex-shrink-0">
                 <div>
                   <h4><a href="single-post.html">Et dolores corrupti quae illo quod dolor</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
-              </div><!-- End recent post item-->
+              </div> -->
+              <!-- End recent post item-->
 
             </div><!--/Recent Posts Widget -->
 
