@@ -1415,6 +1415,10 @@ section,
   margin: 30px 0;
 }
 
+.text-accent {
+  color: var(--accent-color);
+}
+
 .blog-details .content {
   margin-top: 20px;
 }
