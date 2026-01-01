@@ -1,0 +1,59 @@
+{
+  "lastUpdateDate": 1767271212000,
+  "localPageUrl": "/credit-cards/alliance-bank/alliance-visa-signature.html",
+  "name": "Alliance Visa Signature Credit Card",
+  "description": "The Alliance Visa Signature Credit Card is ideal for Malaysians who prefer to use a single credit card for all their spending needs, offering a balanced mix of cashback and rewards across various categories.",
+  "imageUrl": "https://ringgitplus.com/img-v5/card-400/alliance-bank-visa-signature-6170288db89bc7fe1ad4af76.jpg",
+  "tables": [
+    {
+      "title": "Cashback & Rewards",
+      "columns": [
+        { "key": "category", "label": "Category" },
+        { "key": "reward", "label": "Reward" },
+        { "key": "cap", "label": "Monthly Cap" },
+        { "key": "minSpend", "label": "Min Spend" }
+      ],
+      "rows": [
+        {
+          "category": "Online Shopping, Groceries, Dining, Petrol, Utilities & Other Retail Spends",
+          "reward": "0.05% Cashback",
+          "cap": "uncapped",
+          "minSpend": "RM1 - RM1,000 monthly"
+        },
+        {
+          "category": "Online Shopping, Groceries, Dining, Petrol, Utilities & Other Retail Spends",
+          "reward": "0.5% Cashback",
+          "cap": "uncapped",
+          "minSpend": "RM1,001 - RM2,000 monthly"
+        },
+        {
+          "category": "Online Shopping, Groceries, Dining, Petrol, Utilities & Other Retail Spends",
+          "reward": "5% Cashback",
+          "cap": "uncapped",
+          "minSpend": "RM2,001 - RM3,000 monthly"
+        },
+        {
+          "category": "Online Shopping, Groceries, Dining, Petrol, Utilities & Other Retail Spends",
+          "reward": "0.25% Cashback",
+          "cap": "uncapped",
+          "minSpend": "RM3,001 or above monthly"
+        }
+      ]
+    }
+  ],
+
+  "highlights": [
+    "All-in-one credit card",
+    "Up to 5% cashback",
+    "Best if monthly spending between RM2,000 - RM3,000",
+    "RM148 annual fee - 1st year free"
+  ],
+  "referral": {
+    "provider": "RinggitPlus",
+    "url": "https://invl.me/cln5dlq"
+  },
+  "original": {
+    "provider": "Alliance Bank",
+    "url": "https://www.alliancebank.com.my/personal/Cards/Credit-Cards/visa-signature-credit-card"
+  }
+}

@@ -104,7 +104,7 @@
                     <h3>Personal Finance, Simplified</h3>
 
                     <p class="fs-4">
-                      <span class="text-success fw-bold">DuitFirst</span> helps Malaysians make quick, confident money decisions — without the noise.
+                      <span class="text-success fw-bold">DuitFirst</span> helps Malaysians make quick & confident money decisions, without the noise.
                     </p>
 
                     <ul>
@@ -114,7 +114,7 @@
                     </ul>
 
                     <p class="fs-4">
-                      When it comes to managing money, start with what matters — <b class="text-success">Du it First</b>.  
+                      When it comes to managing money, start with what matters — <b class="text-success">Du it First</b>.<br>  
                       Simple enough to remember, practical enough to act on.
                     </p>
                   </div>
@@ -163,8 +163,8 @@
       }
 
       function renderCard(card) {
-        const bestForHTML = card.bestFor && card.bestFor.length
-          ? '<ul>' + card.bestFor.map(item => '<li>' + escapeHTML(item) + '</li>').join('') + '</ul>'
+        const highlightsHTML = card.highlights && card.highlights.length
+          ? '<ul>' + card.highlights.map(item => '<li>' + escapeHTML(item) + '</li>').join('') + '</ul>'
           : '';
 
         return `
@@ -175,8 +175,8 @@
                 <span class="post-date">${new Date(card.lastUpdateDate).toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' })}</span>
               </div>
               <div class="post-content d-flex flex-column">
-                <h3 class="post-title">Unlock Amazing Benefits with the ${escapeHTML(card.name)}!</h3>
-                ${bestForHTML}
+                <h3 class="post-title">Unlock Amazing Benefits with the <span class="fw-bold text-success">${escapeHTML(card.name)}</span>!</h3>
+                ${highlightsHTML}
                 <hr>
                 <a href="${card.localPageUrl}" class="readmore stretched-link">
                   <span>Learn More</span><i class="bi bi-arrow-right"></i>

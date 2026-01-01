@@ -1,5 +1,75 @@
 [
   {
+    "lastUpdateDate": 1767271212000,
+    "localPageUrl": "/credit-cards/alliance-bank/alliance-visa-signature.html",
+    "name": "Alliance Visa Signature Credit Card",
+    "description": "The Alliance Visa Signature Credit Card is ideal for Malaysians who prefer to use a single credit card for all their spending needs, offering a balanced mix of cashback and rewards across various categories.",
+    "imageUrl": "https://ringgitplus.com/img-v5/card-400/alliance-bank-visa-signature-6170288db89bc7fe1ad4af76.jpg",
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          {
+            "key": "category",
+            "label": "Category"
+          },
+          {
+            "key": "reward",
+            "label": "Reward"
+          },
+          {
+            "key": "cap",
+            "label": "Monthly Cap"
+          },
+          {
+            "key": "minSpend",
+            "label": "Min Spend"
+          }
+        ],
+        "rows": [
+          {
+            "category": "Online Shopping, Groceries, Dining, Petrol, Utilities & Other Retail Spends",
+            "reward": "0.05% Cashback",
+            "cap": "uncapped",
+            "minSpend": "RM1 - RM1,000 monthly"
+          },
+          {
+            "category": "Online Shopping, Groceries, Dining, Petrol, Utilities & Other Retail Spends",
+            "reward": "0.5% Cashback",
+            "cap": "uncapped",
+            "minSpend": "RM1,001 - RM2,000 monthly"
+          },
+          {
+            "category": "Online Shopping, Groceries, Dining, Petrol, Utilities & Other Retail Spends",
+            "reward": "5% Cashback",
+            "cap": "uncapped",
+            "minSpend": "RM2,001 - RM3,000 monthly"
+          },
+          {
+            "category": "Online Shopping, Groceries, Dining, Petrol, Utilities & Other Retail Spends",
+            "reward": "0.25% Cashback",
+            "cap": "uncapped",
+            "minSpend": "RM3,001 or above monthly"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "All-in-one credit card",
+      "Up to 5% cashback",
+      "Best if monthly spending between RM2,000 - RM3,000",
+      "RM148 annual fee - 1st year free"
+    ],
+    "referral": {
+      "provider": "RinggitPlus",
+      "url": "https://invl.me/cln5dlq"
+    },
+    "original": {
+      "provider": "Alliance Bank",
+      "url": "https://www.alliancebank.com.my/personal/Cards/Credit-Cards/visa-signature-credit-card"
+    }
+  },
+  {
     "lastUpdateDate": 1767249851000,
     "localPageUrl": "/credit-cards/aeon/aeon-mastercard-gold.html",
     "name": "AEON Mastercard Gold Credit Card",
@@ -35,30 +105,31 @@
             "category": "AEON Stores & AEON BiG",
             "reward": "8% Cashback",
             "cap": "RM100 / month",
-            "minSpend": "RM1,250",
-            "notes": "20th & 28th only"
+            "minSpend": "Any amount",
+            "notes": "20th & 28th of the month only"
           },
           {
             "category": "Dining",
             "reward": "5% Cashback",
             "cap": "RM25 / month",
-            "minSpend": "RM500",
-            "notes": "MCC 5812 & 5814"
+            "minSpend": "Any amount",
+            "notes": "-"
           },
           {
-            "category": "Overseas Spending",
-            "reward": "3× AEON Points",
-            "cap": "Unlimited",
-            "minSpend": "No minimum",
-            "notes": "Per RM2 spent"
+            "category": "AEON Points",
+            "reward": "Refer to Official Page (Click See More Details Button)",
+            "cap": "-",
+            "minSpend": "-",
+            "notes": "-"
           }
         ]
       }
     ],
-    "bestFor": [
-      "AEON shoppers",
-      "Dining cashback",
-      "Simple cashback structure"
+    "highlights": [
+      "5% Dining cashback",
+      "8% AEON cashback on 20th & 28th",
+      "3x Airport lounge access (spend RM500 in AEON within 30 days before or after lounge visit)",
+      "RM95 annual fee - 1st year free (Subsequently waived with 12 transactions per year)"
     ],
     "referral": {
       "provider": "RinggitPlus",
@@ -105,30 +176,31 @@
             "category": "AEON Stores & AEON BiG",
             "reward": "8% Cashback",
             "cap": "RM100 / month",
-            "minSpend": "RM1,250",
-            "notes": "20th & 28th only"
+            "minSpend": "Any amount",
+            "notes": "20th & 28th of the month only"
           },
           {
             "category": "Dining",
             "reward": "5% Cashback",
             "cap": "RM25 / month",
-            "minSpend": "RM500",
-            "notes": "MCC 5812 & 5814"
+            "minSpend": "Any amount",
+            "notes": "-"
           },
           {
-            "category": "Overseas Spending",
-            "reward": "3× AEON Points",
-            "cap": "Unlimited",
-            "minSpend": "No minimum",
-            "notes": "Per RM2 spent"
+            "category": "AEON Points",
+            "reward": "Refer to Official Page (Click See More Details Button)",
+            "cap": "-",
+            "minSpend": "-",
+            "notes": "-"
           }
         ]
       }
     ],
-    "bestFor": [
-      "AEON shoppers",
-      "Dining cashback",
-      "Simple cashback structure"
+    "highlights": [
+      "5% Dining cashback",
+      "8% AEON cashback on 20th & 28th",
+      "3x Airport lounge access (spend RM500 in AEON within 30 days before or after lounge visit)",
+      "RM95 annual fee - 1st year free (Subsequently waived with 12 transactions per year)"
     ],
     "referral": {
       "provider": "RinggitPlus",
