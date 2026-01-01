@@ -20,24 +20,24 @@
         if (!Array.isArray(data)) throw new Error('Invalid JSON format');
 
         // Sort by lastUpdateDate descending and take top 5
-        var top5 = data
+        var top10 = data
           .slice()
           .sort(function(a, b) { return b.lastUpdateDate - a.lastUpdateDate; })
-          .slice(0, 5);
+          .slice(0, 10);
 
         var html = '';
 
         html += '<h3 class="widget-title">Recent Posts</h3>';
 
-        top5.forEach(function(card) {
+        top10.forEach(function(card) {
           html += `
             <div class="post-item d-flex mb-3">
               <img src="${card.imageUrl}" alt="${escapeHTML(card.name)} Image" 
-                   class="img-fluid flex-shrink-0" style="width:80px; height:auto; margin-right:10px;">
+                   class="img-fluid flex-shrink-0" style="width:auto; height:70px; margin-right:10px;">
               <div>
                 <h4>
                   <a href="${card.localPageUrl}" target="_blank">
-                    Unlock Amazing Benefits with the ${escapeHTML(card.name)}!
+                    Unlock Amazing Benefits with the <span class="text-success fw-bold">${escapeHTML(card.name)}</span>!
                   </a>
                 </h4>
                 <time datetime="${new Date(card.lastUpdateDate).toISOString()}">

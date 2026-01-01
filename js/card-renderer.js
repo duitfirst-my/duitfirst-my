@@ -56,22 +56,22 @@
         var html = '';
 
         if (data.name) {
-            html += `<h1>${data.name}</h1>`;
+            html += `<h1 class="fw-bold text-success">${data.name}</h1>`;
         }
 
         if (data.description) {
-            html += `<p>${data.description}</p>`;
+            html += `<p class="fs-5">${data.description}</p>`;
         }
 
         if (data.imageUrl) {
             html += `<div class="text-center my-4"><img src="${data.imageUrl}" alt="${data.name}" class="img-fluid"></div>`;
         }
 
-        // Best For
-        if (data.bestFor && data.bestFor.length) {
-          html += '<h3>Best For</h3><ul>';
-          data.bestFor.forEach(function (item) {
-            html += '<li>' + escapeHTML(item) + '</li>';
+        // Highlights
+        if (data.highlights && data.highlights.length) {
+          html += '<h3>Highlights</h3><ul class="mb-5">';
+          data.highlights.forEach(function (item) {
+            html += '<li class="fs-5 fw-bold text-success">' + escapeHTML(item) + '</li>';
           });
           html += '</ul>';
         }
@@ -81,18 +81,20 @@
           html += renderTables(data.tables);
         }
 
+        html += `<p class="fs-5 mt-3">Too see any other details or perks of this card, please click on the button to view the official page.</p>`;
+
         // CTA
         if (data.referral) {
           html +=
             `<div class="text-center my-4">
                 <a href="${escapeHTML(data.referral.url)}" target="_blank" rel="noopener noreferrer"
-                 class="btn btn-success btn-lg">See More Details !</a>
+                 class="btn btn-success btn-lg">See More Details</a>
             </div>`;
         } else if (data.original) {
             html +=
             `<div class="text-center my-4">
                 <a href="${escapeHTML(data.original.url)}" target="_blank" rel="noopener noreferrer"
-                 class="btn btn-success btn-lg">See More Details !</a>
+                 class="btn btn-success btn-lg">See More Details</a>
             </div>`;
         }
 
