@@ -1,0 +1,56 @@
+{
+  "lastUpdateDate": 1767249841000,
+  "localPageUrl": "/credit-cards/aeon/aeon-visa-gold.html",
+  "name": "AEON Visa Gold Credit Card",
+  "description": "The AEON Visa Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
+  "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000009.jpg",
+  "tables": [
+    {
+      "title": "Cashback & Rewards",
+      "columns": [
+        { "key": "category", "label": "Category" },
+        { "key": "reward", "label": "Reward" },
+        { "key": "cap", "label": "Monthly Cap" },
+        { "key": "minSpend", "label": "Min Spend" },
+        { "key": "notes", "label": "Notes" }
+      ],
+      "rows": [
+        {
+          "category": "AEON Stores & AEON BiG",
+          "reward": "8% Cashback",
+          "cap": "RM100 / month",
+          "minSpend": "RM1,250",
+          "notes": "20th & 28th only"
+        },
+        {
+          "category": "Dining",
+          "reward": "5% Cashback",
+          "cap": "RM25 / month",
+          "minSpend": "RM500",
+          "notes": "MCC 5812 & 5814"
+        },
+        {
+          "category": "Overseas Spending",
+          "reward": "3× AEON Points",
+          "cap": "Unlimited",
+          "minSpend": "No minimum",
+          "notes": "Per RM2 spent"
+        }
+      ]
+    }
+  ],
+
+  "bestFor": [
+    "AEON shoppers",
+    "Dining cashback",
+    "Simple cashback structure"
+  ],
+  "referral": {
+    "provider": "RinggitPlus",
+    "url": "https://invol.co/clm8e3w"
+  },
+  "original": {
+    "provider": "AEON Credit Service",
+    "url": "https://myaeoncredit.com.my/aeon-cards/aeon-gold-visa-card/?uuid=33a073d8-1a18-427e-ab0a-16707cc08e15"
+  }
+}
