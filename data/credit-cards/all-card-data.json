@@ -1,5 +1,63 @@
 [
   {
+    "lastUpdateDate": 1767324570000,
+    "localPageUrl": "/credit-cards/alliance-bank/alliance-visa-platinum-virtual.html",
+    "name": "Alliance Visa Platinum Virtual Credit Card",
+    "description": "The Alliance Visa Platinum Virtual Credit Card is ideal for Malaysians who use E-Wallets frequently, and loves online shopping. It is a fully digital reward points credit card with no plastic card issued.",
+    "imageUrl": "https://ringgitplus.com/img-v5/card-400/alliance-bank-visa-virtual-credit-card-642e7c69056b64660333e503.jpg",
+    "tables": [
+      {
+        "title": "Rewards",
+        "columns": [
+          {
+            "key": "category",
+            "label": "Category"
+          },
+          {
+            "key": "reward",
+            "label": "Reward"
+          },
+          {
+            "key": "cap",
+            "label": "Monthly Cap"
+          },
+          {
+            "key": "minSpend",
+            "label": "Min Spend"
+          }
+        ],
+        "rows": [
+          {
+            "category": "Online Shopping & E-Wallet Reloads",
+            "reward": "8 points per RM1",
+            "cap": "RM3000 per statement month",
+            "minSpend": "-"
+          },
+          {
+            "category": "All other transactions (incl. Instalment Payment Plan, Flexi Payment Plan, JomPay and FPX transactions)",
+            "reward": "1 point per RM1",
+            "cap": "uncapped",
+            "minSpend": "-"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "Fully digital credit card, no plastic issued",
+      "8x reward points on e-wallet reloads & online shopping",
+      "Points are valid for 3 years",
+      "No annual fee - Free for Life"
+    ],
+    "referral": {
+      "provider": "RinggitPlus",
+      "url": "https://invl.me/cln5ei2"
+    },
+    "original": {
+      "provider": "Alliance Bank",
+      "url": "https://www.alliancebank.com.my/personal/Cards/Credit-Cards/visa-platinum-virtual-credit-card"
+    }
+  },
+  {
     "lastUpdateDate": 1767271212000,
     "localPageUrl": "/credit-cards/alliance-bank/alliance-visa-signature.html",
     "name": "Alliance Visa Signature Credit Card",
