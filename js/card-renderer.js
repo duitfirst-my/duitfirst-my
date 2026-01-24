@@ -81,7 +81,7 @@
           html += renderTables(data.tables);
         }
 
-        html += `<p class="fs-5 mt-3">Too see any other details or perks of this card, please click on the button to view the official page.</p>`;
+        html += `<p class="fs-5 mt-3">To see any other details or perks of this card, please click on the button to view the official page.</p>`;
 
         // CTA
         if (data.referral) {
