@@ -15,13 +15,13 @@
       ],
       "rows": [
         {
-          "category": "Online Shopping",
+          "category": "Online Shopping & Auto Billing",
           "reward": "3% Cashback",
           "cap": "RM50",
           "minSpend": "RM3000 or above"
         },
         {
-          "category": "Online Shopping",
+          "category": "Online Shopping & Auto Billing",
           "reward": "3% Cashback",
           "cap": "RM30",
           "minSpend": "RM1 - RM2999"
@@ -30,34 +30,17 @@
           "category": "E-Wallet Reload/Transactions",
           "reward": "3% Cashback",
           "cap": "RM30",
-          "minSpend": "RM3000 or above"
-        },
-        {
-          "category": "E-Wallet Reload/Transactions",
-          "reward": "3% Cashback",
-          "cap": "RM30",
-          "minSpend": "RM1 - RM2999"
-        },
-        {
-          "category": "Auto Billing",
-          "reward": "3% Cashback",
-          "cap": "RM50",
-          "minSpend": "RM3000 or above"
-        },
-        {
-          "category": "Auto Billing",
-          "reward": "3% Cashback",
-          "cap": "RM30",
-          "minSpend": "RM1 - RM2999"
+          "minSpend": "RM1 or above"
         }
       ]
     }
   ],
 
   "highlights": [
-    "3% Cashback for Online Shopping & E-Wallet Reloads",
-    "High Cashback Cap (RM30 - RM50)",
-    "Make 12 transactions to waive annual fees"
+    "3% Cashback for Online Shopping, E-Wallet Reloads, & Auto Billing",
+    "Cashback capped at RM30 per month if spending is below RM3000",
+    "Cashback capped at RM50 per month if spending is RM3000 or above",
+    "Make 12 transactions per year to waive annual fees"
   ],
   "original": {
     "provider": "Affin Bank",
