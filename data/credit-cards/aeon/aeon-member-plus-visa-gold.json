@@ -1,9 +1,9 @@
 {
-  "lastUpdateDate": 1767249851000,
-  "localPageUrl": "/credit-cards/aeon/aeon-mastercard-gold.html",
-  "name": "AEON Mastercard Gold Credit Card",
-  "description": "The AEON Mastercard Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
-  "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000003.jpg",
+  "lastUpdateDate": 1769250359000,
+  "localPageUrl": "/credit-cards/aeon/aeon-visa-gold.html",
+  "name": "AEON Member Plus (AMP) Visa Gold Credit Card",
+  "description": "The AEON Member Plus (AMP) Visa Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
+  "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000009.jpg",
   "tables": [
     {
       "title": "Cashback & Rewards",
@@ -48,10 +48,10 @@
   ],
   "referral": {
     "provider": "RinggitPlus",
-    "url": "https://invol.co/clm8e49"
+    "url": "https://invol.co/clm8e3w"
   },
   "original": {
     "provider": "AEON Credit Service",
-    "url": "https://myaeoncredit.com.my/aeon-cards/aeon-gold-mastercard/?uuid=33a073d8-1a18-427e-ab0a-16707cc08e15"
+    "url": "https://myaeoncredit.com.my/aeon-cards/aeon-gold-visa-card/?uuid=33a073d8-1a18-427e-ab0a-16707cc08e15"
   }
 }
