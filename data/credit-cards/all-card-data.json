@@ -128,35 +128,20 @@
     }
   },
   {
-    "lastUpdateDate": 1767249851000,
+    "lastUpdateDate": 1769250359000,
     "localPageUrl": "/credit-cards/aeon/aeon-mastercard-gold.html",
-    "name": "AEON Mastercard Gold Credit Card",
-    "description": "The AEON Mastercard Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
+    "name": "AEON Member Plus (AMP) Mastercard Gold Credit Card",
+    "description": "The AEON Member Plus (AMP) Mastercard Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
     "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000003.jpg",
     "tables": [
       {
         "title": "Cashback & Rewards",
         "columns": [
-          {
-            "key": "category",
-            "label": "Category"
-          },
-          {
-            "key": "reward",
-            "label": "Reward"
-          },
-          {
-            "key": "cap",
-            "label": "Monthly Cap"
-          },
-          {
-            "key": "minSpend",
-            "label": "Min Spend"
-          },
-          {
-            "key": "notes",
-            "label": "Notes"
-          }
+          { "key": "category", "label": "Category" },
+          { "key": "reward", "label": "Reward" },
+          { "key": "cap", "label": "Monthly Cap" },
+          { "key": "minSpend", "label": "Min Spend" },
+          { "key": "notes", "label": "Notes" }
         ],
         "rows": [
           {
@@ -183,6 +168,7 @@
         ]
       }
     ],
+
     "highlights": [
       "5% Dining cashback",
       "8% AEON cashback on 20th & 28th",
@@ -199,35 +185,20 @@
     }
   },
   {
-    "lastUpdateDate": 1767249841000,
+    "lastUpdateDate": 1769250359000,
     "localPageUrl": "/credit-cards/aeon/aeon-visa-gold.html",
-    "name": "AEON Visa Gold Credit Card",
-    "description": "The AEON Visa Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
+    "name": "AEON Member Plus (AMP) Visa Gold Credit Card",
+    "description": "The AEON Member Plus (AMP) Visa Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
     "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000009.jpg",
     "tables": [
       {
         "title": "Cashback & Rewards",
         "columns": [
-          {
-            "key": "category",
-            "label": "Category"
-          },
-          {
-            "key": "reward",
-            "label": "Reward"
-          },
-          {
-            "key": "cap",
-            "label": "Monthly Cap"
-          },
-          {
-            "key": "minSpend",
-            "label": "Min Spend"
-          },
-          {
-            "key": "notes",
-            "label": "Notes"
-          }
+          { "key": "category", "label": "Category" },
+          { "key": "reward", "label": "Reward" },
+          { "key": "cap", "label": "Monthly Cap" },
+          { "key": "minSpend", "label": "Min Spend" },
+          { "key": "notes", "label": "Notes" }
         ],
         "rows": [
           {
@@ -254,6 +225,7 @@
         ]
       }
     ],
+
     "highlights": [
       "5% Dining cashback",
       "8% AEON cashback on 20th & 28th",
@@ -267,6 +239,72 @@
     "original": {
       "provider": "AEON Credit Service",
       "url": "https://myaeoncredit.com.my/aeon-cards/aeon-gold-visa-card/?uuid=33a073d8-1a18-427e-ab0a-16707cc08e15"
+    }
+  },
+  {
+    "lastUpdateDate": 1769250359000,
+    "localPageUrl": "/credit-cards/affin-bank/affin-duo-visa.html",
+    "name": "Affin Duo Visa Credit Card",
+    "description": "The Affin Duo Visa Credit Card is ideal for Malaysians who regularly use E-Wallets, and loves online shopping.",
+    "imageUrl": "https://ringgitplus.com/img-v5/card-400/affin-duo-visa-cash-back-5f5a03adb2a9381d10775b7e.jpg",
+    "tables": [
+      {
+        "title": "Rewards",
+        "columns": [
+          { "key": "category", "label": "Category" },
+          { "key": "reward", "label": "Reward" },
+          { "key": "cap", "label": "Monthly Cap" },
+          { "key": "minSpend", "label": "Min Spend" }
+        ],
+        "rows": [
+          {
+            "category": "Online Shopping",
+            "reward": "3% Cashback",
+            "cap": "RM50",
+            "minSpend": "RM3000 or above"
+          },
+          {
+            "category": "Online Shopping",
+            "reward": "3% Cashback",
+            "cap": "RM30",
+            "minSpend": "RM1 - RM2999"
+          },
+          {
+            "category": "E-Wallet Reload/Transactions",
+            "reward": "3% Cashback",
+            "cap": "RM30",
+            "minSpend": "RM3000 or above"
+          },
+          {
+            "category": "E-Wallet Reload/Transactions",
+            "reward": "3% Cashback",
+            "cap": "RM30",
+            "minSpend": "RM1 - RM2999"
+          },
+          {
+            "category": "Auto Billing",
+            "reward": "3% Cashback",
+            "cap": "RM50",
+            "minSpend": "RM3000 or above"
+          },
+          {
+            "category": "Auto Billing",
+            "reward": "3% Cashback",
+            "cap": "RM30",
+            "minSpend": "RM1 - RM2999"
+          }
+        ]
+      }
+    ],
+
+    "highlights": [
+      "3% Cashback for Online Shopping & E-Wallet Reloads",
+      "High Cashback Cap (RM30 - RM50)",
+      "Make 12 transactions to waive annual fees"
+    ],
+    "original": {
+      "provider": "Affin Bank",
+      "url": "https://www.affinalways.com/en/affin-duo"
     }
   }
 ]

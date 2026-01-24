@@ -1,0 +1,66 @@
+{
+  "lastUpdateDate": 1769250359000,
+  "localPageUrl": "/credit-cards/affin-bank/affin-duo-visa.html",
+  "name": "Affin Duo Visa Credit Card",
+  "description": "The Affin Duo Visa Credit Card is ideal for Malaysians who regularly use E-Wallets, and loves online shopping.",
+  "imageUrl": "https://ringgitplus.com/img-v5/card-400/affin-duo-visa-cash-back-5f5a03adb2a9381d10775b7e.jpg",
+  "tables": [
+    {
+      "title": "Rewards",
+      "columns": [
+        { "key": "category", "label": "Category" },
+        { "key": "reward", "label": "Reward" },
+        { "key": "cap", "label": "Monthly Cap" },
+        { "key": "minSpend", "label": "Min Spend" }
+      ],
+      "rows": [
+        {
+          "category": "Online Shopping",
+          "reward": "3% Cashback",
+          "cap": "RM50",
+          "minSpend": "RM3000 or above"
+        },
+        {
+          "category": "Online Shopping",
+          "reward": "3% Cashback",
+          "cap": "RM30",
+          "minSpend": "RM1 - RM2999"
+        },
+        {
+          "category": "E-Wallet Reload/Transactions",
+          "reward": "3% Cashback",
+          "cap": "RM30",
+          "minSpend": "RM3000 or above"
+        },
+        {
+          "category": "E-Wallet Reload/Transactions",
+          "reward": "3% Cashback",
+          "cap": "RM30",
+          "minSpend": "RM1 - RM2999"
+        },
+        {
+          "category": "Auto Billing",
+          "reward": "3% Cashback",
+          "cap": "RM50",
+          "minSpend": "RM3000 or above"
+        },
+        {
+          "category": "Auto Billing",
+          "reward": "3% Cashback",
+          "cap": "RM30",
+          "minSpend": "RM1 - RM2999"
+        }
+      ]
+    }
+  ],
+
+  "highlights": [
+    "3% Cashback for Online Shopping & E-Wallet Reloads",
+    "High Cashback Cap (RM30 - RM50)",
+    "Make 12 transactions to waive annual fees"
+  ],
+  "original": {
+    "provider": "Affin Bank",
+    "url": "https://www.affinalways.com/en/affin-duo"
+  }
+}
