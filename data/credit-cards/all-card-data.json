@@ -129,120 +129,6 @@
   },
   {
     "lastUpdateDate": 1769250359000,
-    "localPageUrl": "/credit-cards/aeon/aeon-mastercard-gold.html",
-    "name": "AEON Member Plus (AMP) Mastercard Gold Credit Card",
-    "description": "The AEON Member Plus (AMP) Mastercard Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
-    "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000003.jpg",
-    "tables": [
-      {
-        "title": "Cashback & Rewards",
-        "columns": [
-          { "key": "category", "label": "Category" },
-          { "key": "reward", "label": "Reward" },
-          { "key": "cap", "label": "Monthly Cap" },
-          { "key": "minSpend", "label": "Min Spend" },
-          { "key": "notes", "label": "Notes" }
-        ],
-        "rows": [
-          {
-            "category": "AEON Stores & AEON BiG",
-            "reward": "8% Cashback",
-            "cap": "RM100 / month",
-            "minSpend": "Any amount",
-            "notes": "20th & 28th of the month only"
-          },
-          {
-            "category": "Dining",
-            "reward": "5% Cashback",
-            "cap": "RM25 / month",
-            "minSpend": "Any amount",
-            "notes": "-"
-          },
-          {
-            "category": "AEON Points",
-            "reward": "Refer to Official Page (Click See More Details Button)",
-            "cap": "-",
-            "minSpend": "-",
-            "notes": "-"
-          }
-        ]
-      }
-    ],
-
-    "highlights": [
-      "5% Dining cashback",
-      "8% AEON cashback on 20th & 28th",
-      "3x Airport lounge access (spend RM500 in AEON within 30 days before or after lounge visit)",
-      "RM95 annual fee - 1st year free (Subsequently waived with 12 transactions per year)"
-    ],
-    "referral": {
-      "provider": "RinggitPlus",
-      "url": "https://invol.co/clm8e49"
-    },
-    "original": {
-      "provider": "AEON Credit Service",
-      "url": "https://myaeoncredit.com.my/aeon-cards/aeon-gold-mastercard/?uuid=33a073d8-1a18-427e-ab0a-16707cc08e15"
-    }
-  },
-  {
-    "lastUpdateDate": 1769250359000,
-    "localPageUrl": "/credit-cards/aeon/aeon-visa-gold.html",
-    "name": "AEON Member Plus (AMP) Visa Gold Credit Card",
-    "description": "The AEON Member Plus (AMP) Visa Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
-    "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000009.jpg",
-    "tables": [
-      {
-        "title": "Cashback & Rewards",
-        "columns": [
-          { "key": "category", "label": "Category" },
-          { "key": "reward", "label": "Reward" },
-          { "key": "cap", "label": "Monthly Cap" },
-          { "key": "minSpend", "label": "Min Spend" },
-          { "key": "notes", "label": "Notes" }
-        ],
-        "rows": [
-          {
-            "category": "AEON Stores & AEON BiG",
-            "reward": "8% Cashback",
-            "cap": "RM100 / month",
-            "minSpend": "Any amount",
-            "notes": "20th & 28th of the month only"
-          },
-          {
-            "category": "Dining",
-            "reward": "5% Cashback",
-            "cap": "RM25 / month",
-            "minSpend": "Any amount",
-            "notes": "-"
-          },
-          {
-            "category": "AEON Points",
-            "reward": "Refer to Official Page (Click See More Details Button)",
-            "cap": "-",
-            "minSpend": "-",
-            "notes": "-"
-          }
-        ]
-      }
-    ],
-
-    "highlights": [
-      "5% Dining cashback",
-      "8% AEON cashback on 20th & 28th",
-      "3x Airport lounge access (spend RM500 in AEON within 30 days before or after lounge visit)",
-      "RM95 annual fee - 1st year free (Subsequently waived with 12 transactions per year)"
-    ],
-    "referral": {
-      "provider": "RinggitPlus",
-      "url": "https://invol.co/clm8e3w"
-    },
-    "original": {
-      "provider": "AEON Credit Service",
-      "url": "https://myaeoncredit.com.my/aeon-cards/aeon-gold-visa-card/?uuid=33a073d8-1a18-427e-ab0a-16707cc08e15"
-    }
-  },
-  {
-    "lastUpdateDate": 1769250359000,
     "localPageUrl": "/credit-cards/affin-bank/affin-duo-visa.html",
     "name": "Affin Duo Visa Credit Card",
     "description": "The Affin Duo Visa Credit Card is ideal for Malaysians who regularly use E-Wallets, and loves online shopping.",
@@ -305,6 +191,120 @@
     "original": {
       "provider": "Affin Bank",
       "url": "https://www.affinalways.com/en/affin-duo"
+    }
+  },
+  {
+    "lastUpdateDate": 1769250359000,
+    "localPageUrl": "/credit-cards/aeon/aeon-member-plus-mastercard-gold.html",
+    "name": "AEON Member Plus (AMP) Mastercard Gold Credit Card",
+    "description": "The AEON Member Plus (AMP) Mastercard Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
+    "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000003.jpg",
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          { "key": "category", "label": "Category" },
+          { "key": "reward", "label": "Reward" },
+          { "key": "cap", "label": "Monthly Cap" },
+          { "key": "minSpend", "label": "Min Spend" },
+          { "key": "notes", "label": "Notes" }
+        ],
+        "rows": [
+          {
+            "category": "AEON Stores & AEON BiG",
+            "reward": "8% Cashback",
+            "cap": "RM100 / month",
+            "minSpend": "Any amount",
+            "notes": "20th & 28th of the month only"
+          },
+          {
+            "category": "Dining",
+            "reward": "5% Cashback",
+            "cap": "RM25 / month",
+            "minSpend": "Any amount",
+            "notes": "-"
+          },
+          {
+            "category": "AEON Points",
+            "reward": "Refer to Official Page (Click See More Details Button)",
+            "cap": "-",
+            "minSpend": "-",
+            "notes": "-"
+          }
+        ]
+      }
+    ],
+
+    "highlights": [
+      "5% Dining cashback",
+      "8% AEON cashback on 20th & 28th",
+      "3x Airport lounge access (spend RM500 in AEON within 30 days before or after lounge visit)",
+      "RM95 annual fee - 1st year free (Subsequently waived with 12 transactions per year)"
+    ],
+    "referral": {
+      "provider": "RinggitPlus",
+      "url": "https://invol.co/clm8e49"
+    },
+    "original": {
+      "provider": "AEON Credit Service",
+      "url": "https://myaeoncredit.com.my/aeon-cards/aeon-gold-mastercard/?uuid=33a073d8-1a18-427e-ab0a-16707cc08e15"
+    }
+  },
+  {
+    "lastUpdateDate": 1769250359000,
+    "localPageUrl": "/credit-cards/aeon/aeon-member-plus-visa-gold.html",
+    "name": "AEON Member Plus (AMP) Visa Gold Credit Card",
+    "description": "The AEON Member Plus (AMP) Visa Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
+    "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000009.jpg",
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          { "key": "category", "label": "Category" },
+          { "key": "reward", "label": "Reward" },
+          { "key": "cap", "label": "Monthly Cap" },
+          { "key": "minSpend", "label": "Min Spend" },
+          { "key": "notes", "label": "Notes" }
+        ],
+        "rows": [
+          {
+            "category": "AEON Stores & AEON BiG",
+            "reward": "8% Cashback",
+            "cap": "RM100 / month",
+            "minSpend": "Any amount",
+            "notes": "20th & 28th of the month only"
+          },
+          {
+            "category": "Dining",
+            "reward": "5% Cashback",
+            "cap": "RM25 / month",
+            "minSpend": "Any amount",
+            "notes": "-"
+          },
+          {
+            "category": "AEON Points",
+            "reward": "Refer to Official Page (Click See More Details Button)",
+            "cap": "-",
+            "minSpend": "-",
+            "notes": "-"
+          }
+        ]
+      }
+    ],
+
+    "highlights": [
+      "5% Dining cashback",
+      "8% AEON cashback on 20th & 28th",
+      "3x Airport lounge access (spend RM500 in AEON within 30 days before or after lounge visit)",
+      "RM95 annual fee - 1st year free (Subsequently waived with 12 transactions per year)"
+    ],
+    "referral": {
+      "provider": "RinggitPlus",
+      "url": "https://invol.co/clm8e3w"
+    },
+    "original": {
+      "provider": "AEON Credit Service",
+      "url": "https://myaeoncredit.com.my/aeon-cards/aeon-gold-visa-card/?uuid=33a073d8-1a18-427e-ab0a-16707cc08e15"
     }
   }
 ]
