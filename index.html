@@ -237,8 +237,8 @@
           // renderSection('latest-posts-container', latestPosts);
 
           // Top 5 for Credit Cards (can be same as latestPosts or different logic)
-          const creditCards = sortedCards.slice(0, 5);
-          renderSection('credit-cards-container', creditCards);
+          // const creditCards = sortedCards.slice(0, 5);
+          renderSection('credit-cards-container', sortedCards);
         })
         .catch(err => {
           console.error(err);
