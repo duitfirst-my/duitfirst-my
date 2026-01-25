@@ -64,7 +64,7 @@
         }
 
         if (data.imageUrl) {
-            html += `<div class="text-center my-4"><img src="${data.imageUrl}" alt="${data.name}" class="img-fluid"></div>`;
+            html += `<div class="text-center my-4"><img src="${data.imageUrl}" alt="${data.name}" class="img-fluid" style="max-height: 250px;"></div>`;
         }
 
         // Highlights
