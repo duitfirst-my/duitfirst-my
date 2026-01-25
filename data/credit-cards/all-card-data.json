@@ -296,5 +296,55 @@
       "provider": "AEON Credit Service",
       "url": "https://myaeoncredit.com.my/aeon-cards/aeon-gold-visa-card/?uuid=33a073d8-1a18-427e-ab0a-16707cc08e15"
     }
+  },
+  {
+    "lastUpdateDate": 1769330641000,
+    "localPageUrl": "/credit-cards/affin-bank/affin-duo-plus.html",
+    "name": "Affin Duo+ Visa & Mastercard Credit Cards",
+    "description": "The Affin Duo+ <b class='text-success'>Visa</b> Credit Card is ideal for Malaysians who uses contactless transactions regularly.<br><br>The Affin Duo+ <b class='text-success'>Mastercard</b> Credit Card is ideal for Malaysians who prefer collecting rewards points instead of cashback, and mostly spend on travelling.",
+    "imageUrl": "https://www.affinalways.com/storage/card_box//1638969436en.png",
+    "tables": [
+      {
+        "title": "Rewards",
+        "columns": [
+          { "key": "category", "label": "Category" },
+          { "key": "reward", "label": "Reward" },
+          { "key": "cap", "label": "Monthly Cap" },
+          { "key": "condition", "label": "Condition" }
+        ],
+        "rows": [
+          {
+            "category": "Contactless Transactions (Visa Only)",
+            "reward": "3% Cashback",
+            "cap": "RM100",
+            "condition": "Previous balance of RM8000 and above"
+          },
+          {
+            "category": "Contactless Transactions (Visa Only)",
+            "reward": "3% Cashback",
+            "cap": "RM50",
+            "condition": "Previous balance below RM8000"
+          },
+          {
+            "category": "Airlines, E-Commerce/Online, Duty Free Shops, Hotels, Overseas Transactions (Mastercard Only)",
+            "reward": "3x AFFIN Rewards Points (Valid for 3 years)",
+            "cap": "-",
+            "condition": "-"
+          }
+        ]
+      }
+    ],
+
+    "highlights": [
+      "[Visa Only] 3% Cashback for Contactless Transactions",
+      "[Visa Only] Cashback capped at RM100 per month if previous balance is RM8000 and above",
+      "[Visa Only] Cashback capped at RM50 per month if previous balance is below RM8000",
+      "[Mastercard Only] 3X AFFIN Rewards Points on Airlines, E-Commerce/Online, Duty Free Shops, Hotels, Overseas Transactions",
+      "[Visa & Mastercard] Make 12 transactions per year to waive annual fees"
+    ],
+    "original": {
+      "provider": "Affin Bank",
+      "url": "https://www.affinalways.com/en/affin-duo-plus"
+    }
   }
 ]
