@@ -346,5 +346,61 @@
       "provider": "Affin Bank",
       "url": "https://www.affinalways.com/en/affin-duo-plus"
     }
+  },
+  {
+    "lastUpdateDate": 1769337572000,
+    "localPageUrl": "/credit-cards/maybank/maybank-islamic-petronas-ikhwan-visa-gold.html",
+    "name": "Maybank Islamic PETRONAS Ikhwan Visa Gold Credit Card-i",
+    "description": "The Maybank Islamic PETRONAS Ikhwan Visa Gold Credit Card-i is ideal for Malaysians who are able to aim to refuel on weekends, and are okay with refuelling from Petronas stations only.",
+    "imageUrl": "https://www.maybank2u.com.my/iwov-resources/images/personal/cards/visa/ikhwan-petronas-list.png",
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          { "key": "category", "label": "Category" },
+          { "key": "reward", "label": "Reward" },
+          { "key": "cap", "label": "Monthly Cap" },
+          { "key": "minSpend", "label": "Min Spend" }
+        ],
+        "rows": [
+          {
+            "category": "Saturday & Sunday spending at Petronas stations",
+            "reward": "8% Cashback",
+            "cap": "RM50",
+            "minSpend": "Any amount"
+          },
+          {
+            "category": "Monday to Friday spending at Petronas stations",
+            "reward": "1% Cashback",
+            "cap": "RM50",
+            "minSpend": "Any amount"
+          },
+          {
+            "category": "Education Institutions, Insurance/Takaful, Utilities, 0% EzyPay/EzyPay-i",
+            "reward": "1x TreatsPoints",
+            "cap": "uncapped",
+            "minSpend": "Any amount"
+          },
+          {
+            "category": "Government Bodies / JomPay, E-Wallet Reloads",
+            "reward": "No cashback / points",
+            "cap": "-",
+            "minSpend": "-"
+          }
+        ]
+      }
+    ],
+
+    "highlights": [
+      "Petrol cashback card",
+      "8% cashback on Petronas station transactions (Sat & Sun only)",
+      "1% cashback on Petronas station transactions (Mon - Fri)",
+      "Cashback capped at RM50 per month, no minimum spend required",
+      "Free for Life - No annual fee"
+    ],
+    "original": {
+      "provider": "Maybank",
+      "url": "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/cards/credit/islamic_petronas_ikhwan_visa_gold_card_i.page?"
+    }
   }
 ]
