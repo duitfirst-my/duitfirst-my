@@ -37,7 +37,7 @@
               <div>
                 <h4>
                   <a href="${card.localPageUrl}" target="_blank">
-                    Unlock Amazing Benefits with the <span class="text-success fw-bold">${escapeHTML(card.name)}</span>!
+                    Unlock Amazing Benefits with the <span class="text-success fw-bold">${escapeHTML(card.name)}</span>
                   </a>
                 </h4>
                 <time datetime="${new Date(card.lastUpdateDate).toISOString()}">
