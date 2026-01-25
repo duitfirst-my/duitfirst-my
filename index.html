@@ -22,6 +22,26 @@
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;  /* Firefox */
     }
+
+    .scroll-indicator {
+      animation: pulse 1.6s ease-in-out infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes pulse {
+      0% {
+        opacity: 0.4;
+        transform: translateX(0);
+      }
+      50% {
+        opacity: 1;
+        transform: translateX(6px);
+      }
+      100% {
+        opacity: 0.4;
+        transform: translateX(0);
+      }
+    }
   </style>
 
   <script>
@@ -82,7 +102,7 @@
                 <div id="credit-cards" class="col-12">
                   <h3 class="text-center">Credit Cards</h3>
                   <hr>
-                  <p class="text-end">Scroll For More <i class="bi bi-chevron-double-right" style="font-size: 1rem;"></i></p>
+                  <p class="text-end scroll-indicator">Scroll For More <i class="bi bi-chevron-double-right" style="font-size: 1rem;"></i></p>
                 </div>
 
                 <div class="row flex-nowrap overflow-x-scroll hide-scrollbar pb-3" id="credit-cards-container">
