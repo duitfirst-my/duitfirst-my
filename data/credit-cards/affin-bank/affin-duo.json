@@ -1,0 +1,56 @@
+{
+  "lastUpdateDate": 1769328847000,
+  "localPageUrl": "/credit-cards/affin-bank/affin-duo.html",
+  "name": "Affin Duo Visa & Mastercard Credit Cards",
+  "description": "The Affin Duo <b class='text-success'>Visa</b> Credit Card is ideal for Malaysians who regularly use E-Wallets, and loves online shopping.<br><br>The Affin Duo <b class='text-success'>Mastercard</b> Credit Card is ideal for Malaysians who prefer collecting rewards points instead of cashback, and mostly spend on Dining, Groceries, and Petrol.",
+  "imageUrl": "https://www.affinalways.com/storage/card_box//1766732492en.png",
+  "tables": [
+    {
+      "title": "Rewards",
+      "columns": [
+        { "key": "category", "label": "Category" },
+        { "key": "reward", "label": "Reward" },
+        { "key": "cap", "label": "Monthly Cap" },
+        { "key": "minSpend", "label": "Min Spend" }
+      ],
+      "rows": [
+        {
+          "category": "Online Shopping & Auto Billing (Visa Only)",
+          "reward": "3% Cashback",
+          "cap": "RM50",
+          "minSpend": "RM3000 or above"
+        },
+        {
+          "category": "Online Shopping & Auto Billing (Visa Only)",
+          "reward": "3% Cashback",
+          "cap": "RM30",
+          "minSpend": "RM1 - RM2999"
+        },
+        {
+          "category": "E-Wallet Reload/Transactions (Visa Only)",
+          "reward": "3% Cashback",
+          "cap": "RM30",
+          "minSpend": "RM1 or above"
+        },
+        {
+          "category": "Dining, Groceries, & Petrol (Mastercard Only)",
+          "reward": "3x AFFIN Rewards Points (Valid for 3 years)",
+          "cap": "-",
+          "minSpend": "-"
+        }
+      ]
+    }
+  ],
+
+  "highlights": [
+    "[Visa Only] 3% Cashback for Online Shopping, E-Wallet Reloads, & Auto Billing",
+    "[Visa Only] Cashback capped at RM30 per month if spending is below RM3000",
+    "[Visa Only] Cashback capped at RM50 per month if spending is RM3000 or above",
+    "[Mastercard Only] 3X AFFIN Rewards Points on Dining, Groceries & Petrol",
+    "[Visa & Mastercard] Make 12 transactions per year to waive annual fees"
+  ],
+  "original": {
+    "provider": "Affin Bank",
+    "url": "https://www.affinalways.com/en/affin-duo"
+  }
+}
