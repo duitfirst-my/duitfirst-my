@@ -560,5 +560,215 @@
     },
     "provider": "maybank-islamic",
     "slug": "maybank-islamic-ikhwan-american-express-platinum-card-i"
+  },
+  {
+    "lastUpdateDate": 1778252020000,
+    "localPageUrl": "/credit-cards/maybank/maybank-2-gold-cards/",
+    "name": "Maybank 2 Gold Cards",
+    "description": "The Maybank 2 Gold Cards (American Express) is ideal for Malaysians who loves shopping on weekends.",
+    "imageUrl": "https://www.maybank2u.com.my/iwov-resources/images/personal/cards/visa/_0003_M2C-VISA-Gold-OL.png",
+    "recommended": true,
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          {
+            "key": "category",
+            "label": "Category"
+          },
+          {
+            "key": "reward",
+            "label": "Reward"
+          },
+          {
+            "key": "cap",
+            "label": "Monthly Cap"
+          },
+          {
+            "key": "minSpend",
+            "label": "Min Spend"
+          }
+        ],
+        "rows": [
+          {
+            "category": "All Local and Overseas Spending With Maybank 2 American Express Card (Weekends)",
+            "reward": "5% Cashback",
+            "cap": "RM50",
+            "minSpend": "any amount on weekends only"
+          },
+          {
+            "category": "on all retail spend on weekdays with Maybank 2 American Express Card, including petrol (capped at RM500 per transaction)",
+            "reward": "5 points on every RM1",
+            "cap": "-",
+            "minSpend": "-"
+          },
+          {
+            "category": "on all retail spend (local and abroad) with Maybank 2 MasterCard or Visa",
+            "reward": "1 point on every RM1",
+            "cap": "-",
+            "minSpend": "-"
+          },
+          {
+            "category": "on utilities, education, insurance and EzyPay Instalment",
+            "reward": "1 point on every RM1",
+            "cap": "-",
+            "minSpend": "-"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "Weekend shopping cashback card (American Express card only)",
+      "5% cashback on weekend spending (American Express card only)",
+      "Cashback capped at RM50 per month (American Express card only)",
+      "Free for Life - No annual fee"
+    ],
+    "original": {
+      "provider": "Maybank",
+      "url": "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/cards/credit/maybank_2_gold_card.page?"
+    },
+    "provider": "maybank",
+    "slug": "maybank-2-gold-cards"
+  },
+  {
+    "lastUpdateDate": 1778252895000,
+    "localPageUrl": "/credit-cards/maybank/maybank-2-platinum-cards/",
+    "name": "Maybank 2 Platinum Cards",
+    "description": "The Maybank 2 Platinum Cards (American Express) is ideal for Malaysians who loves shopping on weekends.",
+    "imageUrl": "https://www.maybank2u.com.my/iwov-resources/images/personal/cards/visa/_0002_M2C-VISA-Plat-OL.png",
+    "recommended": true,
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          {
+            "key": "category",
+            "label": "Category"
+          },
+          {
+            "key": "reward",
+            "label": "Reward"
+          },
+          {
+            "key": "cap",
+            "label": "Monthly Cap"
+          },
+          {
+            "key": "minSpend",
+            "label": "Min Spend"
+          }
+        ],
+        "rows": [
+          {
+            "category": "All retail transactions made on weekends (except for government bodies and utilities) - with Maybank 2 American Express Card Only",
+            "reward": "5% Cashback",
+            "cap": "RM50",
+            "minSpend": "any amount on weekends only"
+          },
+          {
+            "category": "On all retail spend on the weekdays with Maybank 2 American Express Card",
+            "reward": "5 points on every RM1",
+            "cap": "-",
+            "minSpend": "-"
+          },
+          {
+            "category": "On all local or overseas spend with Maybank 2 Mastercard/Visa",
+            "reward": "1 point on every RM1",
+            "cap": "-",
+            "minSpend": "-"
+          },
+          {
+            "category": "On utilities, education, insurance and EzyPay Instalment",
+            "reward": "1 point on every RM1",
+            "cap": "-",
+            "minSpend": "-"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "Weekend shopping cashback card (American Express card only)",
+      "5% cashback on weekend spending (American Express card only)",
+      "Cashback capped at RM50 per month (American Express card only)",
+      "Free for Life - No annual fee"
+    ],
+    "original": {
+      "provider": "Maybank",
+      "url": "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/cards/credit/maybank_2_platinum_card.page?"
+    },
+    "provider": "maybank",
+    "slug": "maybank-2-platinum-cards"
+  },
+  {
+    "lastUpdateDate": 1778253951000,
+    "localPageUrl": "/credit-cards/uob/uob-evol-card/",
+    "name": "UOB Evol Card",
+    "description": "The UOB Evol Card is useful for Malaysians who often shop online & use E-Wallet frequently.\nHowever, it is not the most efficient cashback card in this category (Online Spend & E-Wallet).",
+    "imageUrl": "https://ringgitplus.com/en/blog/wp-content/uploads/2024/11/uob-evol.png",
+    "recommended": false,
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          {
+            "key": "category",
+            "label": "Category"
+          },
+          {
+            "key": "reward",
+            "label": "Reward"
+          },
+          {
+            "key": "cap",
+            "label": "Monthly Cap"
+          },
+          {
+            "key": "minSpend",
+            "label": "Min Spend"
+          }
+        ],
+        "rows": [
+          {
+            "category": "Online Spend",
+            "reward": "10% Cashback",
+            "cap": "RM15 / month",
+            "minSpend": "from RM1,000 or above monthly"
+          },
+          {
+            "category": "E-Wallet Transactions",
+            "reward": "5% Cashback",
+            "cap": "RM15 / month",
+            "minSpend": "from RM1,000 or above monthly"
+          },
+          {
+            "category": "Entertainment and dining purchases",
+            "reward": "5 points on every RM1",
+            "cap": "-",
+            "minSpend": "-"
+          },
+          {
+            "category": "Other purchases",
+            "reward": "1 point on every RM1",
+            "cap": "-",
+            "minSpend": "-"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "10% Online spend cashback (capped at RM15/month, minimum spend RM1,000/month)",
+      "5% cashback on E-Wallet transactions (capped at RM15/month, minimum spend RM1,000/month)",
+      "RM90 annual fee - 1st year free if new to UOB (Subsequently waived with 1 retail transaction per statement month.)"
+    ],
+    "referral": {
+      "provider": "RinggitPlus",
+      "url": "https://invl.me/clnfzst"
+    },
+    "original": {
+      "provider": "UOB",
+      "url": "https://www.uob.com.my/personal/cards/credit-cards/uob-evol-card.page"
+    },
+    "provider": "uob",
+    "slug": "uob-evol-card"
   }
 ]

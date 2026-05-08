@@ -20,6 +20,7 @@ export function getStaticPaths() {
 const { card, allCards: cards } = Astro.props as { card: Card; allCards: Card[] };
 
 const descriptionText = card.description.replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]*>/g, ' ');
+const descriptionHtml = card.description.replace(/\n/g, '<br />');
 ---
 
 <BaseLayout
@@ -44,7 +45,7 @@ const descriptionText = card.description.replace(/<br\s*\/?>/gi, ' ').replace(/<
             </p>
           )}
 
-          <p class="fs-5" set:html={card.description}></p>
+          <p class="fs-5" set:html={descriptionHtml}></p>
 
           {card.imageUrl && (
             <div class="text-center my-4">

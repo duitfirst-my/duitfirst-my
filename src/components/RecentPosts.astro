@@ -11,7 +11,7 @@ const { cards, currentSlug } = Astro.props;
 const recentCards = cards
   .filter((card: Card) => card.slug !== currentSlug)
   .sort((a: Card, b: Card) => b.lastUpdateDate - a.lastUpdateDate)
-  .slice(0, 10);
+  .slice(0, 5);
 ---
 
 <div id="recent-posts" class="recent-posts-widget widget-item mb-4">
