@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import RecentPosts from '../../../components/RecentPosts.astro';
+import allCards from '../../../data/all-card-data.json';
+import type { Card } from '../../../types';
+
+export function getStaticPaths() {
+  return (allCards as Card[]).map((card) => ({
+    params: {
+      provider: card.provider,
+      slug: card.slug
+    },
+    props: {
+      card,
+      allCards
+    }
+  }));
+}
+
+const { card, allCards: cards } = Astro.props as { card: Card; allCards: Card[] };
+
+const descriptionText = card.description.replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]*>/g, ' ');
+---
+
+<BaseLayout
+  title={`${card.name} – Rewards, Cashback, Minimum Spend & Categories`}
+  description={descriptionText}
+  canonical={`https://www.duitfirst.my${card.localPageUrl}`}
+  bodyClass="single-post-page"
+>
+  <main class="main">
+    <div class="container mt-4">
+      <article>
+        <section id="card-data">
+          <h1 class="fw-bold text-success">{card.name}</h1>
+
+          <p class="fs-5" set:html={card.description}></p>
+
+          {card.imageUrl && (
+            <div class="text-center my-4">
+              <img src={card.imageUrl} alt={card.name} class="img-fluid" style="max-height: 250px;" />
+            </div>
+          )}
+
+          {card.highlights && card.highlights.length > 0 && (
+            <>
+              <h3>Highlights</h3>
+              <ul class="mb-5">
+                {card.highlights.map((item) => (
+                  <li class="fs-5 fw-bold text-success">{item}</li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {card.tables?.map((table) => (
+            <>
+              <h3>{table.title}</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      {table.columns.map((col) => <th>{col.label}</th>)}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {table.rows.map((row) => (
+                      <tr>
+                        {table.columns.map((col) => <td>{row[col.key] || '—'}</td>)}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </>
+          ))}
+
+          <p class="fs-5 mt-3">
+            To see any other details or perks of this card, please click on the button to view the official page.
+          </p>
+
+          {(card.referral || card.original) && (
+            <div class="text-center my-4">
+              <a
+                href={(card.referral || card.original)!.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-success btn-lg"
+              >
+                See More Details
+              </a>
+            </div>
+          )}
+
+          <p class="text-success fw-bold fs-6 mt-4">
+            DuitFirst highlights only the most relevant benefits.<br />
+            Rewards, terms and conditions may change at any time.<br />
+            Always refer to the official product page for latest full details.
+          </p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <RecentPosts cards={cards} currentSlug={card.slug} />
+      </div>
+    </div>
+  </div>
+</BaseLayout>

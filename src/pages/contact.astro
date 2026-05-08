@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageTitle from '../components/PageTitle.astro';
+---
+
+<BaseLayout title="Contact - DuitFirst" bodyClass="contact-page">
+  <main class="main">
+    <PageTitle title="Contact" breadcrumbs={['Contact']} />
+
+    <section id="contact" class="contact section pb-0">
+      <div class="container">
+        <div class="mb-4">
+          <iframe
+            style="border:0; width: 100%; height: 270px;"
+            src="https://maps.google.com/maps?hl=en&amp;q=salak south&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            frameborder="0"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Salak South, Kuala Lumpur, Malaysia.</p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+6012-513 9022</p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>duitfirst.my@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <form class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+                </div>
+
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required />
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required />
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-author-widget-2 widget-item mt-4 mb-0">
+        <div class="d-flex flex-column align-items-center">
+          <img src="/assets/img/team/cl-pic.jpg" class="rounded-circle flex-shrink-0" alt="" />
+          <h4>Cheong Chien Li</h4>
+          <h6>Author of DuitFirst</h6>
+          <div class="social-links">
+            <a href="https://www.clcheong.com/" target="_blank"><i class="bi bi-globe"></i></a>
+            <a href="https://www.instagram.com/clcheong00/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/cheong-chien-li" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+
+          <p class="text-center">
+            Working professionally as an IT Specialist, but I have a passion for discussing personal finance.<br />Please feel free to reach out to me for any inquiries or collaborations!
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script slot="scripts" is:inline>
+    const form = document.querySelector('.php-email-form');
+
+    form?.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const name = form.querySelector('[name="name"]').value;
+      const email = form.querySelector('[name="email"]').value;
+      const subject = form.querySelector('[name="subject"]').value;
+      const message = form.querySelector('[name="message"]').value;
+
+      const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+      )}`;
+
+      window.location.href = mailtoLink;
+    });
+  </script>
+</BaseLayout>
