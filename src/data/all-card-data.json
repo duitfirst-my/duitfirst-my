@@ -5,6 +5,7 @@
     "name": "Alliance Visa Platinum Virtual Credit Card",
     "description": "The Alliance Visa Platinum Virtual Credit Card is ideal for Malaysians who use E-Wallets frequently, and loves online shopping. It is a fully digital reward points credit card with no plastic card issued.",
     "imageUrl": "https://ringgitplus.com/img-v5/card-400/alliance-bank-visa-virtual-credit-card-642e7c69056b64660333e503.jpg",
+    "recommended": false,
     "tables": [
       {
         "title": "Rewards",
@@ -65,6 +66,7 @@
     "name": "Alliance Visa Signature Credit Card",
     "description": "The Alliance Visa Signature Credit Card is ideal for Malaysians who prefer to use a single credit card for all their spending needs, offering a balanced mix of cashback and rewards across various categories.",
     "imageUrl": "https://ringgitplus.com/img-v5/card-400/alliance-bank-visa-signature-6170288db89bc7fe1ad4af76.jpg",
+    "recommended": false,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -137,6 +139,7 @@
     "name": "Affin Duo Visa & Mastercard Credit Cards",
     "description": "The Affin Duo Visa Credit Card is ideal for Malaysians who regularly use E-Wallets, and loves online shopping.\n\nThe Affin Duo Mastercard Credit Card is ideal for Malaysians who prefer collecting rewards points instead of cashback, and mostly spend on Dining, Groceries, and Petrol.",
     "imageUrl": "https://www.affinalways.com/storage/card_box//1766732492en.png",
+    "recommended": true,
     "tables": [
       {
         "title": "Rewards",
@@ -206,6 +209,7 @@
     "name": "AEON Member Plus (AMP) Mastercard Gold Credit Card",
     "description": "The AEON Member Plus (AMP) Mastercard Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
     "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000003.jpg",
+    "recommended": true,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -279,6 +283,7 @@
     "name": "AEON Member Plus (AMP) Visa Gold Credit Card",
     "description": "The AEON Member Plus (AMP) Visa Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
     "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000009.jpg",
+    "recommended": true,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -352,6 +357,7 @@
     "name": "Affin Duo+ Visa & Mastercard Credit Cards",
     "description": "The Affin Duo+ <b class='text-success'>Visa</b> Credit Card is ideal for Malaysians who uses contactless transactions regularly.<br><br>The Affin Duo+ <b class='text-success'>Mastercard</b> Credit Card is ideal for Malaysians who prefer collecting rewards points instead of cashback, and mostly spend on travelling.",
     "imageUrl": "https://www.affinalways.com/storage/card_box//1638969436en.png",
+    "recommended": true,
     "tables": [
       {
         "title": "Rewards",
@@ -415,6 +421,7 @@
     "name": "Maybank Islamic PETRONAS Ikhwan Visa Gold Credit Card-i",
     "description": "The Maybank Islamic PETRONAS Ikhwan Visa Gold Credit Card-i is ideal for Malaysians who are able to aim to refuel on weekends, and are okay with refuelling from Petronas stations only.",
     "imageUrl": "https://www.maybank2u.com.my/iwov-resources/images/personal/cards/visa/ikhwan-petronas-list.png",
+    "recommended": true,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -484,6 +491,7 @@
     "name": "Maybank Islamic PETRONAS Ikhwan American Express Platinum Card-i",
     "description": "The Maybank Islamic PETRONAS Ikhwan American Express Platinum Card-i is ideal for Malaysians who loves online shopping.",
     "imageUrl": "https://www.americanexpress.com/content/dam/amex/en-my/network/images/Maybank_Amex_Platinum.png",
+    "recommended": true,
     "tables": [
       {
         "title": "Cashback & Rewards",

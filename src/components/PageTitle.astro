@@ -1,22 +1,14 @@
 ---
 interface Props {
   title: string;
-  breadcrumbs?: string[];
   positionRelative?: boolean;
 }
 
-const { title, breadcrumbs = [title], positionRelative = false } = Astro.props;
+const { title, positionRelative = false } = Astro.props;
 ---
 
 <div class:list={['page-title', { 'position-relative': positionRelative }]}>
-  <div class="container d-lg-flex justify-content-between align-items-center">
+  <div class="container">
     <h1 class="mb-2 mb-lg-0">{title}</h1>
-    <nav class="breadcrumbs">
-      <ol>
-        {breadcrumbs.map((crumb, index) => (
-          <li class:list={{ current: index === breadcrumbs.length - 1 }}>{crumb}</li>
-        ))}
-      </ol>
-    </nav>
   </div>
 </div>

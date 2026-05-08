@@ -34,6 +34,16 @@ const descriptionText = card.description.replace(/<br\s*\/?>/gi, ' ').replace(/<
         <section id="card-data">
           <h1 class="fw-bold text-success">{card.name}</h1>
 
+          {card.recommended && (
+            <p
+              class="badge fs-6 px-3 py-2 mt-3 mb-3"
+              style="background: rgba(25, 135, 84, 0.1); color: #198754; border: 1px solid rgba(25, 135, 84, 0.2);"
+            >
+              <i class="bi bi-hand-thumbs-up-fill me-2" aria-hidden="true"></i>
+              Highly Recommended
+            </p>
+          )}
+
           <p class="fs-5" set:html={card.description}></p>
 
           {card.imageUrl && (

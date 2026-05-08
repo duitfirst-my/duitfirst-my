@@ -26,7 +26,18 @@ const recentCards = cards
         style="width:auto; height:70px; margin-right:10px;"
       />
       <div>
-        <h4>
+        {card.recommended && (
+          <p class="mb-2">
+            <span
+              class="badge rounded-pill"
+              style="background: rgba(25, 135, 84, 0.1); color: #198754; border: 1px solid rgba(25, 135, 84, 0.2);"
+              aria-label="Highly Recommended"
+            >
+              <i class="bi bi-hand-thumbs-up-fill me-1"></i>Recommended
+            </span>
+          </p>
+        )}
+        <h4 class="mb-1">
           <a href={card.localPageUrl}>
             Unlock Amazing Benefits with the <span class="text-success fw-bold">{card.name}</span>
           </a>

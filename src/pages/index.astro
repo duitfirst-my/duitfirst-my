@@ -5,6 +5,7 @@ import allCards from '../data/all-card-data.json';
 import type { Card } from '../types';
 
 const cards = (allCards as Card[]).slice().sort((a, b) => b.lastUpdateDate - a.lastUpdateDate);
+const recommendedCards = cards.filter((card) => card.recommended);
 const banks = Array.from(
   new Map(
     cards.map((card) => [
@@ -50,6 +51,23 @@ const defaultBank = banks[0]?.value ?? '';
         max-width: 320px;
       }
 
+      .recommendation-badge {
+        display: inline-flex;
+        align-items: center;
+        align-self: flex-start;
+        gap: 0.5rem;
+        background: rgba(25, 135, 84, 0.1);
+        color: #198754;
+        border: 1px solid rgba(25, 135, 84, 0.2);
+        border-radius: 999px;
+        padding: 0.4rem 0.75rem;
+        font-size: 0.82rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        letter-spacing: 0.01em;
+        width: fit-content;
+      }
+
       @media (max-width: 767.98px) {
         .bank-filter-select {
           max-width: 100%;
@@ -83,7 +101,7 @@ const defaultBank = banks[0]?.value ?? '';
           <section id="blog-posts" class="blog-posts section">
             <div class="container hide-scrollbar" style="overflow-y:scroll; overflow-x:hidden;">
               <div class="row gy-4">
-                <div id="credit-cards" class="col-12">
+                <div id="most-recent-posts" class="col-12">
                   <h3 class="text-center">Most Recent Posts</h3>
                   <hr />
                   <p class="text-end scroll-indicator">
@@ -106,6 +124,12 @@ const defaultBank = banks[0]?.value ?? '';
                           </span>
                         </div>
                         <div class="post-content d-flex flex-column">
+                          {card.recommended && (
+                            <p class="recommendation-badge">
+                              <i class="bi bi-hand-thumbs-up-fill" aria-hidden="true"></i>
+                              Highly Recommended
+                            </p>
+                          )}
                           <h3 class="post-title">
                             Unlock Amazing Benefits with the <span class="fw-bold text-success">{card.name}</span>!
                           </h3>
@@ -163,7 +187,7 @@ const defaultBank = banks[0]?.value ?? '';
           <section class="blog-posts section pt-0">
             <div class="container hide-scrollbar" style="overflow-y:scroll; overflow-x:hidden;">
               <div class="row gy-4">
-                <div class="col-12 section-spacer">
+                <div id="browse-by-bank" class="col-12 section-spacer">
                   <div class="d-md-flex justify-content-between align-items-center gap-3">
                     <div>
                       <h3 class="text-center text-md-start mb-2 mb-md-0">Browse by Bank</h3>
@@ -204,6 +228,12 @@ const defaultBank = banks[0]?.value ?? '';
                           </span>
                         </div>
                         <div class="post-content d-flex flex-column">
+                          {card.recommended && (
+                            <p class="recommendation-badge">
+                              <i class="bi bi-hand-thumbs-up-fill" aria-hidden="true"></i>
+                              Highly Recommended
+                            </p>
+                          )}
                           <h3 class="post-title">
                             Unlock Amazing Benefits with the <span class="fw-bold text-success">{card.name}</span>!
                           </h3>
@@ -226,6 +256,63 @@ const defaultBank = banks[0]?.value ?? '';
           </section>
         </div>
       </div>
+
+      {recommendedCards.length > 0 && (
+        <div class="row">
+          <div class="col-12">
+            <section class="blog-posts section pt-0">
+              <div class="container hide-scrollbar" style="overflow-y:scroll; overflow-x:hidden;">
+                <div class="row gy-4">
+                  <div id="highly-recommended" class="col-12 section-spacer">
+                    <h3 class="text-center">Highly Recommended</h3>
+                    <hr />
+                    <p class="text-end scroll-indicator">
+                      Scroll For More <i class="bi bi-chevron-double-right" style="font-size: 1rem;"></i>
+                    </p>
+                  </div>
+
+                  <div class="row flex-nowrap overflow-x-scroll hide-scrollbar pb-3">
+                    {recommendedCards.map((card) => (
+                      <div class="col-lg-4 col-md-6 flex-shrink-0">
+                        <article class="position-relative h-100">
+                          <div class="post-img position-relative overflow-hidden">
+                            <img src={card.imageUrl} class="img-fluid" alt={card.name} />
+                            <span class="post-date">
+                              {new Date(card.lastUpdateDate).toLocaleDateString('en-GB', {
+                                day: 'numeric',
+                                month: 'short',
+                                year: 'numeric'
+                              })}
+                            </span>
+                          </div>
+                          <div class="post-content d-flex flex-column">
+                            <p class="recommendation-badge mb-2">
+                              <i class="bi bi-hand-thumbs-up-fill" aria-hidden="true"></i>
+                              Highly Recommended
+                            </p>
+                            <h3 class="post-title">
+                              Unlock Amazing Benefits with the <span class="fw-bold text-success">{card.name}</span>!
+                            </h3>
+                            {card.highlights && card.highlights.length > 0 && (
+                              <ul>
+                                {card.highlights.map((item) => <li>{item}</li>)}
+                              </ul>
+                            )}
+                            <hr />
+                            <a href={card.localPageUrl} class="readmore stretched-link">
+                              <span>Learn More</span><i class="bi bi-arrow-right"></i>
+                            </a>
+                          </div>
+                        </article>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      )}
     </div>
   </main>
 

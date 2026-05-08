@@ -24,6 +24,7 @@ export interface Card {
   name: string;
   description: string;
   imageUrl: string;
+  recommended?: boolean;
   tables?: CardTable[];
   highlights?: string[];
   referral?: CardLink;
