@@ -411,7 +411,7 @@
   },
   {
     "lastUpdateDate": 1769337572000,
-    "localPageUrl": "/credit-cards/maybank/maybank-islamic-petronas-ikhwan-visa-gold/",
+    "localPageUrl": "/credit-cards/maybank-islamic/maybank-islamic-petronas-ikhwan-visa-gold/",
     "name": "Maybank Islamic PETRONAS Ikhwan Visa Gold Credit Card-i",
     "description": "The Maybank Islamic PETRONAS Ikhwan Visa Gold Credit Card-i is ideal for Malaysians who are able to aim to refuel on weekends, and are okay with refuelling from Petronas stations only.",
     "imageUrl": "https://www.maybank2u.com.my/iwov-resources/images/personal/cards/visa/ikhwan-petronas-list.png",
@@ -472,10 +472,85 @@
       "Free for Life - No annual fee"
     ],
     "original": {
-      "provider": "Maybank",
+      "provider": "Maybank Islamic",
       "url": "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/cards/credit/islamic_petronas_ikhwan_visa_gold_card_i.page?"
     },
-    "provider": "maybank",
+    "provider": "maybank-islamic",
     "slug": "maybank-islamic-petronas-ikhwan-visa-gold"
+  },
+  {
+    "lastUpdateDate": 1778245251000,
+    "localPageUrl": "/credit-cards/maybank-islamic/maybank-islamic-ikhwan-american-express-platinum-card-i/",
+    "name": "Maybank Islamic PETRONAS Ikhwan American Express Platinum Card-i",
+    "description": "The Maybank Islamic PETRONAS Ikhwan American Express Platinum Card-i is ideal for Malaysians who loves online shopping.",
+    "imageUrl": "https://www.americanexpress.com/content/dam/amex/en-my/network/images/Maybank_Amex_Platinum.png",
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          {
+            "key": "category",
+            "label": "Category"
+          },
+          {
+            "key": "reward",
+            "label": "Reward"
+          },
+          {
+            "key": "cap",
+            "label": "Monthly Cap"
+          },
+          {
+            "key": "minSpend",
+            "label": "Min Spend"
+          }
+        ],
+        "rows": [
+          {
+            "category": "Online spending during Ramadhan and Syawal",
+            "reward": "8% Cashback",
+            "cap": "RM100",
+            "minSpend": "from RM100 or above"
+          },
+          {
+            "category": "Online spending throughout the year (except Ramadhan and Syawal)",
+            "reward": "8% Cashback",
+            "cap": "RM50",
+            "minSpend": "from RM100 or above"
+          },
+          {
+            "category": "On selected eco-friendly merchants (except online spending)",
+            "reward": "3 points on every RM1",
+            "cap": "-",
+            "minSpend": "-"
+          },
+          {
+            "category": "On all local spending (except online spending, petrol, government utilities, education and takaful)",
+            "reward": "2 points on every RM1",
+            "cap": "-",
+            "minSpend": "-"
+          },
+          {
+            "category": "On petrol, government utilities, education and Takaful spending (excluding online spending)",
+            "reward": "1 point on every RM1",
+            "cap": "-",
+            "minSpend": "-"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "Online shopping cashback card",
+      "8% cashback on online spending",
+      "Cashback capped at RM50 per month during non-Ramadhan months",
+      "Cashback capped at RM100 per month, during Ramadhan and Syawal months",
+      "Free for Life - No annual fee"
+    ],
+    "original": {
+      "provider": "Maybank Islamic",
+      "url": "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/cards/credit/islamic_ikhwan_amex_platinum_card_i.page?"
+    },
+    "provider": "maybank-islamic",
+    "slug": "maybank-islamic-ikhwan-american-express-platinum-card-i"
   }
 ]
