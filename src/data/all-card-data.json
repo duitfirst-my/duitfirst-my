@@ -938,5 +938,59 @@
     },
     "provider": "ocbc",
     "slug": "ocbc-great-eastern-platinum-mastercard"
+  },
+  {
+    "lastUpdateDate": 1778320041000,
+    "localPageUrl": "/credit-cards/public-islamic-bank/public-islamic-bank-visa-platinum-credit-card-i/",
+    "name": "Public Islamic Bank Visa Platinum Credit Card-i",
+    "description": "The Public Islamic Bank Visa Platinum Credit Card-i is a good card for Malaysians who frequently shops online, and does not want to be bothered with minimum spend requirements.",
+    "imageUrl": "https://ringgitplus.com/img-v5/card-400/public-islamic-bank-visa-platinum-credit-card-i-54d9e0fc6b4be6cc17227f63.jpg",
+    "recommended": true,
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          {
+            "key": "category",
+            "label": "Category"
+          },
+          {
+            "key": "reward",
+            "label": "Reward"
+          },
+          {
+            "key": "cap",
+            "label": "Monthly Cap"
+          },
+          {
+            "key": "minSpend",
+            "label": "Min Spend"
+          }
+        ],
+        "rows": [
+          {
+            "category": "Online and overseas transactions",
+            "reward": "2% Cashback",
+            "cap": "RM15",
+            "minSpend": "from RM1 or above monthly"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "2% cashback on Online and overseas transactions, capped at RM15 per month (Principal + Supplementary), only RM1 minimum spend required.",
+      "50% discount on Will and Wasiat's Writing service fees.",
+      "RM333 annual fee - First year free (Subsequently waived with 12 swipes per year)"
+    ],
+    "referral": {
+      "provider": "RinggitPlus",
+      "url": "https://invl.me/clng1cq"
+    },
+    "original": {
+      "provider": "Public Islamic Bank",
+      "url": "https://www.pbebank.com/en/cards/our-cards/public-islamic-bank-visa-platinum-credit-card-i/"
+    },
+    "provider": "public-islamic-bank",
+    "slug": "public-islamic-bank-visa-platinum-credit-card-i"
   }
 ]
