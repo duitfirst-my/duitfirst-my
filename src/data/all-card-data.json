@@ -770,5 +770,118 @@
     },
     "provider": "uob",
     "slug": "uob-evol-card"
+  },
+  {
+    "lastUpdateDate": 1778294058000,
+    "localPageUrl": "/credit-cards/bank-rakyat/bank-rakyat-platinum-explorer-credit-card-i/",
+    "name": "Bank Rakyat Platinum Explorer Credit Card-i",
+    "description": "The Bank Rakyat Platinum Explorer Credit Card-i is one of the BEST cards for Malaysians who travels frequently.",
+    "imageUrl": "https://ringgitplus.com/img/wysiwyg/bankrakyatexplorer.612599827.jpeg",
+    "recommended": true,
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          {
+            "key": "category",
+            "label": "Category"
+          },
+          {
+            "key": "reward",
+            "label": "Reward"
+          },
+          {
+            "key": "cap",
+            "label": "Monthly Cap"
+          },
+          {
+            "key": "minSpend",
+            "label": "Min Spend"
+          }
+        ],
+        "rows": [
+          {
+            "category": "Airline Tickets and Hotel Bookings",
+            "reward": "5% Cashback",
+            "cap": "Uncapped",
+            "minSpend": "Any amount"
+          },
+          {
+            "category": "on all local and overseas retail expenses",
+            "reward": "1 point on every RM10",
+            "cap": "-",
+            "minSpend": "-"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "5% cashback on airline tickets and hotel bookings, no minimum spend required, no maximum cap.",
+      "3x yearly access to all Plaza Premium Lounges in Malaysia (Principal & Supplementary)",
+      "No additional fees on currency exchange when making overseas transactions.",
+      "Free for Life - No annual fee"
+    ],
+    "original": {
+      "provider": "Bank Rakyat",
+      "url": "https://www.bankrakyat.com.my/portal-main/article/bank-rakyat-platinum-explorer-card"
+    },
+    "provider": "bank-rakyat",
+    "slug": "bank-rakyat-platinum-explorer-credit-card-i"
+  },
+  {
+    "lastUpdateDate": 1778294933000,
+    "localPageUrl": "/credit-cards/ocbc/ocbc-cashflo-mastercard/",
+    "name": "OCBC CashFlo Mastercard",
+    "description": "The OCBC CashFlo Mastercard is a great card for Malaysians who value their cashflow above all else.\nIt provides 0% Auto-Instalment Payment Plan on purchases of RM500 and above, letting you split big spending into easy monthly instalments automatically.",
+    "imageUrl": "https://ringgitplus.com/img-v5/card-400/ocbc-cashflo-mastercard-588831d6b8bc79665cc8a042.jpg",
+    "recommended": true,
+    "tables": [
+      {
+        "title": "Auto-Instalment Payment Plan Rules",
+        "columns": [
+          {
+            "key": "purchase_range",
+            "label": "Purchase Amount Range"
+          },
+          {
+            "key": "conversion",
+            "label": "Conversion Rule"
+          },
+          {
+            "key": "tenure",
+            "label": "Instalment Tenure"
+          }
+        ],
+        "rows": [
+          {
+            "purchase_range": "Below RM500",
+            "conversion": "No auto-conversion (billed normally, no instalments)",
+            "tenure": "-"
+          },
+          {
+            "purchase_range": "RM500 – RM1,000",
+            "conversion": "Automatically converted to 0% instalment",
+            "tenure": "3 months"
+          },
+          {
+            "purchase_range": "Above RM1,000",
+            "conversion": "Automatically converted to 0% instalment",
+            "tenure": "6 months"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "Automatically convert purchases of RM500 and above into 0% instalment payment plans.",
+      "3 months instalment plan for purchases between RM500 and RM1,000.",
+      "6 months instalment plan for purchases of RM1,000 and above.",
+      "RM188 annual fee - 1st year free (Subsequently waived with RM20,000 minimum spend per year)"
+    ],
+    "original": {
+      "provider": "OCBC",
+      "url": "https://www.ocbc.com.my/personal-banking/cards/cashflo-mastercard"
+    },
+    "provider": "ocbc",
+    "slug": "ocbc-cashflo-mastercard"
   }
 ]
