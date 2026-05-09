@@ -51,6 +51,16 @@ const defaultBank = banks[0]?.value ?? '';
         max-width: 320px;
       }
 
+      .bank-filter-select .form-select {
+        border-color: rgba(25, 135, 84, 0.45);
+        box-shadow: 0 0 0 0.15rem rgba(25, 135, 84, 0.08);
+      }
+
+      .bank-filter-select .form-select:focus {
+        border-color: #198754;
+        box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.18);
+      }
+
       .recommendation-badge {
         display: inline-flex;
         align-items: center;
@@ -114,7 +124,7 @@ const defaultBank = banks[0]?.value ?? '';
                     <div class="col-lg-6 flex-shrink-0">
                       <article class="position-relative h-100">
                         <div class="post-img position-relative overflow-hidden">
-                          <img src={card.imageUrl} class="img-fluid" alt={card.name} />
+                          <img src={card.imageUrl} class="img-fluid" alt={card.name} style="border-radius: 12px;" />
                           <span class="post-date">
                             {new Date(card.lastUpdateDate).toLocaleDateString('en-GB', {
                               day: 'numeric',
@@ -218,7 +228,7 @@ const defaultBank = banks[0]?.value ?? '';
                     >
                       <article class="position-relative h-100">
                         <div class="post-img position-relative overflow-hidden">
-                          <img src={card.imageUrl} class="img-fluid" alt={card.name} />
+                          <img src={card.imageUrl} class="img-fluid" alt={card.name} style="border-radius: 12px;" />
                           <span class="post-date">
                             {new Date(card.lastUpdateDate).toLocaleDateString('en-GB', {
                               day: 'numeric',
@@ -276,7 +286,7 @@ const defaultBank = banks[0]?.value ?? '';
                       <div class="col-lg-4 col-md-6 flex-shrink-0">
                         <article class="position-relative h-100">
                           <div class="post-img position-relative overflow-hidden">
-                            <img src={card.imageUrl} class="img-fluid" alt={card.name} />
+                            <img src={card.imageUrl} class="img-fluid" alt={card.name} style="border-radius: 12px;" />
                             <span class="post-date">
                               {new Date(card.lastUpdateDate).toLocaleDateString('en-GB', {
                                 day: 'numeric',
