@@ -873,8 +873,8 @@
     ],
     "highlights": [
       "Automatically convert purchases of RM500 and above into 0% instalment payment plans.",
-      "3 months instalment plan for purchases between RM500 and RM1,000.",
-      "6 months instalment plan for purchases of RM1,000 and above.",
+      "3 months 0% instalment plan for purchases between RM500 and RM1,000.",
+      "6 months 0% instalment plan for purchases of RM1,000 and above.",
       "RM188 annual fee - 1st year free (Subsequently waived with RM20,000 minimum spend per year)"
     ],
     "original": {
@@ -945,7 +945,7 @@
     "name": "Public Islamic Bank Visa Platinum Credit Card-i",
     "description": "The Public Islamic Bank Visa Platinum Credit Card-i is a good card for Malaysians who frequently shops online, and does not want to be bothered with minimum spend requirements.",
     "imageUrl": "https://ringgitplus.com/img-v5/card-400/public-islamic-bank-visa-platinum-credit-card-i-54d9e0fc6b4be6cc17227f63.jpg",
-    "recommended": true,
+    "recommended": false,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -992,5 +992,69 @@
     },
     "provider": "public-islamic-bank",
     "slug": "public-islamic-bank-visa-platinum-credit-card-i"
+  },
+  {
+    "lastUpdateDate": 1778321618000,
+    "localPageUrl": "/credit-cards/cimb-bank/cimb-cash-rebate-platinum-credit-card/",
+    "name": "CIMB Cash Rebate Platinum Credit Card",
+    "description": "The CIMB Cash Rebate Platinum Credit Card is a good card for Malaysians who wants an All-in-One card, with no minimum spend requirements.\nGreat for daily spending for the average Malaysian.",
+    "imageUrl": "https://ringgitplus.com/img-v5/card-400/cimb-cash-rebate-platinum-credit-card-51e3dc8bd24bc60868000001.jpg",
+    "recommended": true,
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          {
+            "key": "category",
+            "label": "Category"
+          },
+          {
+            "key": "reward",
+            "label": "Reward"
+          },
+          {
+            "key": "cap",
+            "label": "Monthly Cap"
+          },
+          {
+            "key": "minSpend",
+            "label": "Min Spend"
+          }
+        ],
+        "rows": [
+          {
+            "category": "Cinema, Petrol, Groceries, Mobile and Utility Bills Payment via Standing Instruction",
+            "reward": "5% Cashback",
+            "cap": "RM30",
+            "minSpend": "from RM3,000 or above"
+          },
+          {
+            "category": "Cinema, Petrol, Groceries, Mobile and Utility Bills Payment via Standing Instruction",
+            "reward": "2% Cashback",
+            "cap": "RM30",
+            "minSpend": "up to RM2,999"
+          },
+          {
+            "category": "Other Retail or Online Spend",
+            "reward": "0.2% Cashback",
+            "cap": "Uncapped",
+            "minSpend": "Any amount"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "2% or 5% cashback on Cinema, Petrol, Groceries, Mobile and Utility Bills Payment via Standing Instruction, capped at RM30 per month.",
+      "5% cashback if monthly spend is RM3,000 or above.",
+      "2% cashback if monthly spend is below RM3,000",
+      "0.2% cashback on Other Retail or Online Spend.",
+      "Free for Life - No annual fee"
+    ],
+    "original": {
+      "provider": "CIMB Bank",
+      "url": "https://www.cimb.com.my/en/personal/day-to-day-banking/cards/credit-card/cimb-cash-rebate-platinum-credit-card.html"
+    },
+    "provider": "cimb-bank",
+    "slug": "cimb-cash-rebate-platinum-credit-card"
   }
 ]
