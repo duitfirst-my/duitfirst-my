@@ -7,7 +7,6 @@ import type { Card } from '../types';
 
 const cards = (allCards as Card[]).slice().sort((a, b) => b.lastUpdateDate - a.lastUpdateDate);
 const recommendedCards = cards.filter((card) => card.recommended);
-const defaultBank = cards[0]?.provider ?? '';
 ---
 
 <BaseLayout
@@ -76,7 +75,7 @@ const defaultBank = cards[0]?.provider ?? '';
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-8 order-2 order-lg-1">
           <section id="blog-posts" class="blog-posts section">
             <div class="container hide-scrollbar" style="overflow-y:scroll; overflow-x:hidden;">
               <div class="row gy-4">
@@ -131,7 +130,7 @@ const defaultBank = cards[0]?.provider ?? '';
           </section>
         </div>
 
-        <div class="col-lg-4 sidebar">
+        <div class="col-lg-4 sidebar order-1 order-lg-2">
           <div class="widgets-container">
             <section id="about" class="about section pt-0">
               <div class="container">
@@ -164,7 +163,7 @@ const defaultBank = cards[0]?.provider ?? '';
       <div class="row">
         <div class="col-12">
           <div class="section-spacer">
-            <BrowseByBankSection cards={cards} selectedProvider={defaultBank} />
+            <BrowseByBankSection cards={cards} />
           </div>
         </div>
       </div>

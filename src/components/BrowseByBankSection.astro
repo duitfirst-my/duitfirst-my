@@ -3,7 +3,7 @@ import type { Card } from '../types';
 
 interface Props {
   cards: Card[];
-  selectedProvider: string;
+  selectedProvider?: string;
   sectionId?: string;
   title?: string;
 }
@@ -26,6 +26,8 @@ const banks = Array.from(
     ])
   ).values()
 ).sort((a, b) => a.label.localeCompare(b.label));
+
+const resolvedSelectedProvider = selectedProvider || banks[0]?.value || '';
 
 const selectId = `${sectionId}-filter`;
 const containerId = `${sectionId}-posts-container`;
@@ -111,10 +113,10 @@ const cardClass = `${sectionId}-card`;
             {title}
           </h3>
           <div class="bank-filter-select ms-md-auto">
-            <label class="form-label visually-hidden" for={selectId}>Select Bank</label>
+              <label class="form-label visually-hidden" for={selectId}>Select Bank</label>
             <select id={selectId} class="form-select">
               {banks.map((bank) => (
-                <option value={bank.value} selected={bank.value === selectedProvider}>
+                <option value={bank.value} selected={bank.value === resolvedSelectedProvider}>
                   {bank.label}
                 </option>
               ))}
@@ -132,7 +134,7 @@ const cardClass = `${sectionId}-card`;
           <div
             class:list={['col-lg-4', 'col-md-6', 'flex-shrink-0', cardClass]}
             data-provider={entry.provider}
-            style={entry.provider === selectedProvider ? '' : 'display:none;'}
+            style={entry.provider === resolvedSelectedProvider ? '' : 'display:none;'}
           >
             <article class="position-relative h-100">
               <div class="post-img position-relative overflow-hidden">

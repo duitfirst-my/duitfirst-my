@@ -883,5 +883,60 @@
     },
     "provider": "ocbc",
     "slug": "ocbc-cashflo-mastercard"
+  },
+  {
+    "lastUpdateDate": 1778318493000,
+    "localPageUrl": "/credit-cards/ocbc/ocbc-great-eastern-platinum-mastercard/",
+    "name": "OCBC Great Eastern Platinum MasterCard",
+    "description": "The OCBC Great Eastern Platinum MasterCard is a great card for Malaysians who has insurance policies with Great Eastern.",
+    "imageUrl": "https://ringgitplus.com/img-v5/card-400/ocbc-great-eastern-platinum-mastercard-519489e2193821ed4a00010e.jpg",
+    "recommended": true,
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          {
+            "key": "category",
+            "label": "Category"
+          },
+          {
+            "key": "reward",
+            "label": "Reward"
+          },
+          {
+            "key": "cap",
+            "label": "Monthly Cap"
+          },
+          {
+            "key": "minSpend",
+            "label": "Min Spend"
+          }
+        ],
+        "rows": [
+          {
+            "category": "Great Eastern Insurance Premium Payment",
+            "reward": "2.5% Cashback",
+            "cap": "RM100",
+            "minSpend": "Any amount"
+          },
+          {
+            "category": "Other Retail Spending",
+            "reward": "0.1%",
+            "cap": "Uncapped",
+            "minSpend": "Any amount"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "2.5% cashback on Great Eastern insurance premium payments, capped at RM100 per month, no minimum spend required.",
+      "No annual fee - Free for Life"
+    ],
+    "original": {
+      "provider": "OCBC",
+      "url": "https://www.ocbc.com.my/personal-banking/cards/great-eastern-platinum-mastercard"
+    },
+    "provider": "ocbc",
+    "slug": "ocbc-great-eastern-platinum-mastercard"
   }
 ]
