@@ -49,16 +49,6 @@ const descriptionHtml = card.description.replace(/\n/g, '<br />');
             </p>
           )}
 
-          {card.annualIncomeRequirementRM && (
-            <p
-              class="fs-6 fw-semibold mb-3"
-              style="color: #198754;"
-            >
-              <i class="bi bi-coin me-2" aria-hidden="true"></i>
-              {formatAnnualIncomeRequirement(card.annualIncomeRequirementRM)}
-            </p>
-          )}
-
           <p class="fs-5" set:html={descriptionHtml}></p>
 
           {card.imageUrl && (
@@ -75,12 +65,22 @@ const descriptionHtml = card.description.replace(/\n/g, '<br />');
           {card.highlights && card.highlights.length > 0 && (
             <>
               <h3>Highlights</h3>
-              <ul class="mb-5">
+              <ul class="mb-4">
                 {card.highlights.map((item) => (
                   <li class="fs-5 fw-bold text-success">{item}</li>
                 ))}
               </ul>
             </>
+          )}
+
+          {card.annualIncomeRequirementRM && (
+            <p
+              class="fs-6 fw-semibold mb-4"
+              style="color: #198754;"
+            >
+              <i class="bi bi-coin me-2" aria-hidden="true"></i>
+              {formatAnnualIncomeRequirement(card.annualIncomeRequirementRM)}
+            </p>
           )}
 
           {card.tables?.map((table) => (
