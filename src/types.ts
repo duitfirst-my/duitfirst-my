@@ -25,6 +25,7 @@ export interface Card {
   description: string;
   imageUrl: string;
   recommended?: boolean;
+  annualIncomeRequirementRM?: number;
   tables?: CardTable[];
   highlights?: string[];
   referral?: CardLink;

@@ -1,9 +1,12 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import HighlyRecommendedSection from '../../../components/HighlyRecommendedSection.astro';
 import BrowseByBankSection from '../../../components/BrowseByBankSection.astro';
+import BrowseByIncomeSection from '../../../components/BrowseByIncomeSection.astro';
 import RecentPosts from '../../../components/RecentPosts.astro';
 import allCards from '../../../data/all-card-data.json';
 import type { Card } from '../../../types';
+import { formatAnnualIncomeRequirement } from '../../../utils/formatAnnualIncomeRequirement';
 
 export function getStaticPaths() {
   return (allCards as Card[]).map((card) => ({
@@ -43,6 +46,16 @@ const descriptionHtml = card.description.replace(/\n/g, '<br />');
             >
               <i class="bi bi-hand-thumbs-up-fill me-2" aria-hidden="true"></i>
               Highly Recommended
+            </p>
+          )}
+
+          {card.annualIncomeRequirementRM && (
+            <p
+              class="fs-6 fw-semibold mb-3"
+              style="color: #198754;"
+            >
+              <i class="bi bi-coin me-2" aria-hidden="true"></i>
+              {formatAnnualIncomeRequirement(card.annualIncomeRequirementRM)}
             </p>
           )}
 
@@ -128,7 +141,19 @@ const descriptionHtml = card.description.replace(/\n/g, '<br />');
 
     <div class="row mt-4">
       <div class="col-12">
+        <HighlyRecommendedSection cards={cards} />
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
         <BrowseByBankSection cards={cards} selectedProvider={card.provider} />
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <BrowseByIncomeSection cards={cards} selectedAnnualIncomeRequirementRM={card.annualIncomeRequirementRM} />
       </div>
     </div>
   </div>

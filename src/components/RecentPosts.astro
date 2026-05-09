@@ -1,5 +1,6 @@
 ---
 import type { Card } from '../types';
+import { formatAnnualIncomeRequirement } from '../utils/formatAnnualIncomeRequirement';
 
 interface Props {
   cards: Card[];
@@ -34,6 +35,16 @@ const recentCards = cards
               aria-label="Highly Recommended"
             >
               <i class="bi bi-hand-thumbs-up-fill me-1"></i>Recommended
+            </span>
+          </p>
+        )}
+        {card.annualIncomeRequirementRM && (
+          <p class="mb-2">
+            <span
+              style="color: #198754; font-size: 0.88rem; font-weight: 600;"
+              aria-label="Minimum Annual Income Requirement"
+            >
+              <i class="bi bi-coin me-1"></i>{formatAnnualIncomeRequirement(card.annualIncomeRequirementRM)}
             </span>
           </p>
         )}

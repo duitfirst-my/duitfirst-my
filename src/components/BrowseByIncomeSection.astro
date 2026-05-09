@@ -1,34 +1,26 @@
 ---
 import type { Card } from '../types';
 import { formatAnnualIncomeRequirement } from '../utils/formatAnnualIncomeRequirement';
+import { getIncomeRangeIdForAmount, getIncomeRanges } from '../utils/getIncomeRanges';
 
 interface Props {
   cards: Card[];
-  selectedProvider?: string;
+  selectedAnnualIncomeRequirementRM?: number;
   sectionId?: string;
   title?: string;
 }
 
 const {
   cards,
-  selectedProvider,
-  sectionId = 'browse-by-bank',
-  title = 'Browse by Bank'
+  selectedAnnualIncomeRequirementRM,
+  sectionId = 'browse-by-income',
+  title = 'Browse by Annual Income'
 } = Astro.props;
 
-const banks = Array.from(
-  new Map(
-    cards.map((entry) => [
-      entry.provider,
-      {
-        value: entry.provider,
-        label: entry.original?.provider || entry.provider
-      }
-    ])
-  ).values()
-).sort((a, b) => a.label.localeCompare(b.label));
-
-const resolvedSelectedProvider = selectedProvider || banks[0]?.value || '';
+const incomeCards = cards.filter((entry) => entry.annualIncomeRequirementRM);
+const ranges = getIncomeRanges(incomeCards);
+const resolvedSelectedRangeId =
+  getIncomeRangeIdForAmount(selectedAnnualIncomeRequirementRM, ranges) || ranges[0]?.id || '';
 
 const selectId = `${sectionId}-filter`;
 const containerId = `${sectionId}-posts-container`;
@@ -52,16 +44,16 @@ const cardClass = `${sectionId}-card`;
       scrollbar-width: none;
     }
 
-    .bank-filter-select {
+    .income-filter-select {
       max-width: 320px;
     }
 
-    .bank-filter-select .form-select {
+    .income-filter-select .form-select {
       border-color: rgba(25, 135, 84, 0.45);
       box-shadow: 0 0 0 0.15rem rgba(25, 135, 84, 0.08);
     }
 
-    .bank-filter-select .form-select:focus {
+    .income-filter-select .form-select:focus {
       border-color: #198754;
       box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.18);
     }
@@ -96,7 +88,7 @@ const cardClass = `${sectionId}-card`;
     }
 
     @media (max-width: 767.98px) {
-      .bank-filter-select {
+      .income-filter-select {
         max-width: 100%;
         width: 100%;
       }
@@ -125,12 +117,12 @@ const cardClass = `${sectionId}-card`;
           <h3 class="text-center text-md-start mb-2 mb-md-0">
             {title}
           </h3>
-          <div class="bank-filter-select ms-md-auto">
-              <label class="form-label visually-hidden" for={selectId}>Select Bank</label>
+          <div class="income-filter-select ms-md-auto">
+            <label class="form-label visually-hidden" for={selectId}>Select Income Range</label>
             <select id={selectId} class="form-select">
-              {banks.map((bank) => (
-                <option value={bank.value} selected={bank.value === resolvedSelectedProvider}>
-                  {bank.label}
+              {ranges.map((range) => (
+                <option value={range.id} selected={range.id === resolvedSelectedRangeId}>
+                  {range.label}
                 </option>
               ))}
             </select>
@@ -143,11 +135,10 @@ const cardClass = `${sectionId}-card`;
       </div>
 
       <div class="row flex-nowrap overflow-x-scroll hide-scrollbar pb-3" id={containerId}>
-        {cards.map((entry) => (
+        {incomeCards.map((entry) => (
           <div
             class:list={['col-lg-4', 'col-md-6', 'flex-shrink-0', cardClass]}
-            data-provider={entry.provider}
-            style={entry.provider === resolvedSelectedProvider ? '' : 'display:none;'}
+            data-income={entry.annualIncomeRequirementRM}
           >
             <article class="position-relative h-100">
               <div class="post-img position-relative overflow-hidden">
@@ -198,16 +189,19 @@ const cardClass = `${sectionId}-card`;
     </div>
   </div>
 
-  <script is:inline define:vars={{ selectId, cardClass, containerId }}>
+  <script is:inline define:vars={{ selectId, cardClass, containerId, ranges }}>
     const select = document.getElementById(selectId);
     const cards = Array.from(document.querySelectorAll(`.${cardClass}`));
     const container = document.getElementById(containerId);
 
     function updateCards() {
-      const selectedBank = select?.value;
+      const selectedRangeId = select?.value;
+      const selectedRange = ranges.find((range) => range.id === selectedRangeId);
 
       cards.forEach((entry) => {
-        entry.style.display = entry.dataset.provider === selectedBank ? '' : 'none';
+        const income = Number(entry.dataset.income || 0);
+        const isVisible = selectedRange ? income >= selectedRange.min && income <= selectedRange.max : false;
+        entry.style.display = isVisible ? '' : 'none';
       });
 
       container?.scrollTo({

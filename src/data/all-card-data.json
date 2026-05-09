@@ -6,6 +6,7 @@
     "description": "The Alliance Visa Platinum Virtual Credit Card is ideal for Malaysians who use E-Wallets frequently, and loves online shopping. It is a fully digital reward points credit card with no plastic card issued.",
     "imageUrl": "https://ringgitplus.com/img-v5/card-400/alliance-bank-visa-virtual-credit-card-642e7c69056b64660333e503.jpg",
     "recommended": false,
+    "annualIncomeRequirementRM": 24000,
     "tables": [
       {
         "title": "Rewards",
@@ -67,6 +68,7 @@
     "description": "The Alliance Visa Signature Credit Card is ideal for Malaysians who prefer to use a single credit card for all their spending needs, offering a balanced mix of cashback and rewards across various categories.",
     "imageUrl": "https://ringgitplus.com/img-v5/card-400/alliance-bank-visa-signature-6170288db89bc7fe1ad4af76.jpg",
     "recommended": false,
+    "annualIncomeRequirementRM": 48000,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -140,6 +142,7 @@
     "description": "The Affin Duo Visa Credit Card is ideal for Malaysians who regularly use E-Wallets, and loves online shopping.\n\nThe Affin Duo Mastercard Credit Card is ideal for Malaysians who prefer collecting rewards points instead of cashback, and mostly spend on Dining, Groceries, and Petrol.",
     "imageUrl": "https://www.affinalways.com/storage/card_box//1766732492en.png",
     "recommended": true,
+    "annualIncomeRequirementRM": 24000,
     "tables": [
       {
         "title": "Rewards",
@@ -210,6 +213,7 @@
     "description": "The AEON Member Plus (AMP) Mastercard Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
     "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000003.jpg",
     "recommended": true,
+    "annualIncomeRequirementRM": 36000,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -284,6 +288,7 @@
     "description": "The AEON Member Plus (AMP) Visa Gold Credit Card is ideal for Malaysians who shop frequently at AEON and want straightforward cashback without complex redemption rules.",
     "imageUrl": "https://ringgitplus.com/img/card-400/519489e2193821ed4a000009.jpg",
     "recommended": true,
+    "annualIncomeRequirementRM": 36000,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -358,6 +363,7 @@
     "description": "The Affin Duo+ <b class='text-success'>Visa</b> Credit Card is ideal for Malaysians who uses contactless transactions regularly.<br><br>The Affin Duo+ <b class='text-success'>Mastercard</b> Credit Card is ideal for Malaysians who prefer collecting rewards points instead of cashback, and mostly spend on travelling.",
     "imageUrl": "https://www.affinalways.com/storage/card_box//1638969436en.png",
     "recommended": true,
+    "annualIncomeRequirementRM": 48000,
     "tables": [
       {
         "title": "Rewards",
@@ -422,6 +428,7 @@
     "description": "The Maybank Islamic PETRONAS Ikhwan Visa Gold Credit Card-i is ideal for Malaysians who are able to aim to refuel on weekends, and are okay with refuelling from Petronas stations only.",
     "imageUrl": "https://www.maybank2u.com.my/iwov-resources/images/personal/cards/visa/ikhwan-petronas-list.png",
     "recommended": true,
+    "annualIncomeRequirementRM": 30000,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -492,6 +499,7 @@
     "description": "The Maybank Islamic PETRONAS Ikhwan American Express Platinum Card-i is ideal for Malaysians who loves online shopping.",
     "imageUrl": "https://www.americanexpress.com/content/dam/amex/en-my/network/images/Maybank_Amex_Platinum.png",
     "recommended": true,
+    "annualIncomeRequirementRM": 40000,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -568,6 +576,7 @@
     "description": "The Maybank 2 Gold Cards (American Express) is ideal for Malaysians who loves shopping on weekends.",
     "imageUrl": "https://www.maybank2u.com.my/iwov-resources/images/personal/cards/visa/_0003_M2C-VISA-Gold-OL.png",
     "recommended": true,
+    "annualIncomeRequirementRM": 30000,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -637,6 +646,7 @@
     "description": "The Maybank 2 Platinum Cards (American Express) is ideal for Malaysians who loves shopping on weekends.",
     "imageUrl": "https://www.maybank2u.com.my/iwov-resources/images/personal/cards/visa/_0002_M2C-VISA-Plat-OL.png",
     "recommended": true,
+    "annualIncomeRequirementRM": 60000,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -706,6 +716,7 @@
     "description": "The UOB Evol Card is useful for Malaysians who often shop online & use E-Wallet frequently.\nHowever, it is not the most efficient cashback card in this category (Online Spend & E-Wallet).",
     "imageUrl": "https://ringgitplus.com/en/blog/wp-content/uploads/2024/11/uob-evol.png",
     "recommended": false,
+    "annualIncomeRequirementRM": 24000,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -778,6 +789,7 @@
     "description": "The Bank Rakyat Platinum Explorer Credit Card-i is one of the BEST cards for Malaysians who travels frequently.",
     "imageUrl": "https://ringgitplus.com/img-v5/card-400/bank-rakyat-platinum-explorer-credit-card-i-5d9ff9a04945eeac7b690da5.jpg",
     "recommended": true,
+    "annualIncomeRequirementRM": 60000,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -835,6 +847,7 @@
     "description": "The OCBC CashFlo Mastercard is a great card for Malaysians who value their cashflow above all else.\nIt provides 0% Auto-Instalment Payment Plan on purchases of RM500 and above, letting you split big spending into easy monthly instalments automatically.",
     "imageUrl": "https://ringgitplus.com/img/card-400/588831d6b8bc79665cc8a042.jpg?v4=1",
     "recommended": true,
+    "annualIncomeRequirementRM": 48000,
     "tables": [
       {
         "title": "Auto-Instalment Payment Plan Rules",
@@ -891,6 +904,7 @@
     "description": "The OCBC Great Eastern Platinum MasterCard is a great card for Malaysians who has insurance policies with Great Eastern.",
     "imageUrl": "https://ringgitplus.com/img-v5/card-400/ocbc-great-eastern-platinum-mastercard-519489e2193821ed4a00010e.jpg",
     "recommended": true,
+    "annualIncomeRequirementRM": 48000,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -946,6 +960,7 @@
     "description": "The Public Islamic Bank Visa Platinum Credit Card-i is a good card for Malaysians who frequently shops online, and does not want to be bothered with minimum spend requirements.",
     "imageUrl": "https://ringgitplus.com/img-v5/card-400/public-islamic-bank-visa-platinum-credit-card-i-54d9e0fc6b4be6cc17227f63.jpg",
     "recommended": false,
+    "annualIncomeRequirementRM": 40000,
     "tables": [
       {
         "title": "Cashback & Rewards",
@@ -1000,6 +1015,7 @@
     "description": "The CIMB Cash Rebate Platinum Credit Card is a good card for Malaysians who wants an All-in-One card, with no minimum spend requirements.\nGreat for daily spending for the average Malaysian.",
     "imageUrl": "https://ringgitplus.com/img-v5/card-400/cimb-cash-rebate-platinum-credit-card-51e3dc8bd24bc60868000001.jpg",
     "recommended": true,
+    "annualIncomeRequirementRM": 24000,
     "tables": [
       {
         "title": "Cashback & Rewards",
