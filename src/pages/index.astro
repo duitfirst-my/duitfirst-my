@@ -1,23 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageTitle from '../components/PageTitle.astro';
+import BrowseByBankSection from '../components/BrowseByBankSection.astro';
 import allCards from '../data/all-card-data.json';
 import type { Card } from '../types';
 
 const cards = (allCards as Card[]).slice().sort((a, b) => b.lastUpdateDate - a.lastUpdateDate);
 const recommendedCards = cards.filter((card) => card.recommended);
-const banks = Array.from(
-  new Map(
-    cards.map((card) => [
-      card.provider,
-      {
-        value: card.provider,
-        label: card.original?.provider || card.provider
-      }
-    ])
-  ).values()
-).sort((a, b) => a.label.localeCompare(b.label));
-const defaultBank = banks[0]?.value ?? '';
+const defaultBank = cards[0]?.provider ?? '';
 ---
 
 <BaseLayout
@@ -47,20 +37,6 @@ const defaultBank = banks[0]?.value ?? '';
         margin-top: 3rem;
       }
 
-      .bank-filter-select {
-        max-width: 320px;
-      }
-
-      .bank-filter-select .form-select {
-        border-color: rgba(25, 135, 84, 0.45);
-        box-shadow: 0 0 0 0.15rem rgba(25, 135, 84, 0.08);
-      }
-
-      .bank-filter-select .form-select:focus {
-        border-color: #198754;
-        box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.18);
-      }
-
       .recommendation-badge {
         display: inline-flex;
         align-items: center;
@@ -77,14 +53,6 @@ const defaultBank = banks[0]?.value ?? '';
         letter-spacing: 0.01em;
         width: fit-content;
       }
-
-      @media (max-width: 767.98px) {
-        .bank-filter-select {
-          max-width: 100%;
-          width: 100%;
-        }
-      }
-
       @keyframes pulse {
         0% {
           opacity: 0.4;
@@ -194,76 +162,9 @@ const defaultBank = banks[0]?.value ?? '';
 
       <div class="row">
         <div class="col-12">
-          <section class="blog-posts section pt-0">
-            <div class="container hide-scrollbar" style="overflow-y:scroll; overflow-x:hidden;">
-              <div class="row gy-4">
-                <div id="browse-by-bank" class="col-12 section-spacer">
-                  <div class="d-md-flex justify-content-between align-items-center gap-3">
-                    <div>
-                      <h3 class="text-center text-md-start mb-2 mb-md-0">Browse by Bank</h3>
-                    </div>
-                    <div class="bank-filter-select ms-md-auto">
-                      <label class="form-label visually-hidden" for="bank-filter">Select Bank</label>
-                      <select id="bank-filter" class="form-select">
-                        {banks.map((bank) => (
-                          <option value={bank.value} selected={bank.value === defaultBank}>
-                            {bank.label}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-                  </div>
-                  <hr />
-                  <p class="text-end scroll-indicator">
-                    Scroll For More <i class="bi bi-chevron-double-right" style="font-size: 1rem;"></i>
-                  </p>
-                </div>
-
-                <div class="row flex-nowrap overflow-x-scroll hide-scrollbar pb-3" id="bank-posts-container">
-                  {cards.map((card) => (
-                    <div
-                      class="col-lg-4 col-md-6 flex-shrink-0 bank-card"
-                      data-provider={card.provider}
-                      style={card.provider === defaultBank ? '' : 'display:none;'}
-                    >
-                      <article class="position-relative h-100">
-                        <div class="post-img position-relative overflow-hidden">
-                          <img src={card.imageUrl} class="img-fluid" alt={card.name} style="border-radius: 12px;" />
-                          <span class="post-date">
-                            {new Date(card.lastUpdateDate).toLocaleDateString('en-GB', {
-                              day: 'numeric',
-                              month: 'short',
-                              year: 'numeric'
-                            })}
-                          </span>
-                        </div>
-                        <div class="post-content d-flex flex-column">
-                          {card.recommended && (
-                            <p class="recommendation-badge">
-                              <i class="bi bi-hand-thumbs-up-fill" aria-hidden="true"></i>
-                              Highly Recommended
-                            </p>
-                          )}
-                          <h3 class="post-title">
-                            Unlock Amazing Benefits with the <span class="fw-bold text-success">{card.name}</span>!
-                          </h3>
-                          {card.highlights && card.highlights.length > 0 && (
-                            <ul>
-                              {card.highlights.map((item) => <li>{item}</li>)}
-                            </ul>
-                          )}
-                          <hr />
-                          <a href={card.localPageUrl} class="readmore stretched-link">
-                            <span>Learn More</span><i class="bi bi-arrow-right"></i>
-                          </a>
-                        </div>
-                      </article>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
+          <div class="section-spacer">
+            <BrowseByBankSection cards={cards} selectedProvider={defaultBank} />
+          </div>
         </div>
       </div>
 
@@ -326,25 +227,4 @@ const defaultBank = banks[0]?.value ?? '';
     </div>
   </main>
 
-  <script slot="scripts" is:inline>
-    const bankFilter = document.getElementById('bank-filter');
-    const bankCards = Array.from(document.querySelectorAll('.bank-card'));
-    const bankPostsContainer = document.getElementById('bank-posts-container');
-
-    function updateBankCards() {
-      const selectedBank = bankFilter?.value;
-
-      bankCards.forEach((card) => {
-        card.style.display = card.dataset.provider === selectedBank ? '' : 'none';
-      });
-
-      bankPostsContainer?.scrollTo({
-        left: 0,
-        behavior: 'auto'
-      });
-    }
-
-    bankFilter?.addEventListener('change', updateBankCards);
-    updateBankCards();
-  </script>
 </BaseLayout>

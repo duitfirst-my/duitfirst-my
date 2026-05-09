@@ -1,0 +1,200 @@
+---
+import type { Card } from '../types';
+
+interface Props {
+  cards: Card[];
+  selectedProvider: string;
+  sectionId?: string;
+  title?: string;
+}
+
+const {
+  cards,
+  selectedProvider,
+  sectionId = 'browse-by-bank',
+  title = 'Browse by Bank'
+} = Astro.props;
+
+const banks = Array.from(
+  new Map(
+    cards.map((entry) => [
+      entry.provider,
+      {
+        value: entry.provider,
+        label: entry.original?.provider || entry.provider
+      }
+    ])
+  ).values()
+).sort((a, b) => a.label.localeCompare(b.label));
+
+const selectId = `${sectionId}-filter`;
+const containerId = `${sectionId}-posts-container`;
+const cardClass = `${sectionId}-card`;
+---
+
+<section class="blog-posts section pt-0">
+  <style>
+    .scroll-indicator {
+      animation: pulse 1.6s ease-in-out infinite;
+      opacity: 0.7;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .bank-filter-select {
+      max-width: 320px;
+    }
+
+    .bank-filter-select .form-select {
+      border-color: rgba(25, 135, 84, 0.45);
+      box-shadow: 0 0 0 0.15rem rgba(25, 135, 84, 0.08);
+    }
+
+    .bank-filter-select .form-select:focus {
+      border-color: #198754;
+      box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.18);
+    }
+
+    .recommendation-badge {
+      display: inline-flex;
+      align-items: center;
+      align-self: flex-start;
+      gap: 0.5rem;
+      background: rgba(25, 135, 84, 0.1);
+      color: #198754;
+      border: 1px solid rgba(25, 135, 84, 0.2);
+      border-radius: 999px;
+      padding: 0.4rem 0.75rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.01em;
+      width: fit-content;
+    }
+
+    @media (max-width: 767.98px) {
+      .bank-filter-select {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        opacity: 0.4;
+        transform: translateX(0);
+      }
+      50% {
+        opacity: 1;
+        transform: translateX(6px);
+      }
+      100% {
+        opacity: 0.4;
+        transform: translateX(0);
+      }
+    }
+  </style>
+
+  <div class="container hide-scrollbar" style="overflow-y:scroll; overflow-x:hidden;">
+    <div class="row gy-4">
+      <div id={sectionId} class="col-12 section-spacer">
+        <div class="d-md-flex justify-content-between align-items-center gap-3">
+          <h3 class="text-center text-md-start mb-2 mb-md-0">
+            {title}
+          </h3>
+          <div class="bank-filter-select ms-md-auto">
+            <label class="form-label visually-hidden" for={selectId}>Select Bank</label>
+            <select id={selectId} class="form-select">
+              {banks.map((bank) => (
+                <option value={bank.value} selected={bank.value === selectedProvider}>
+                  {bank.label}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+        <hr />
+        <p class="text-end scroll-indicator">
+          Scroll For More <i class="bi bi-chevron-double-right" style="font-size: 1rem;"></i>
+        </p>
+      </div>
+
+      <div class="row flex-nowrap overflow-x-scroll hide-scrollbar pb-3" id={containerId}>
+        {cards.map((entry) => (
+          <div
+            class:list={['col-lg-4', 'col-md-6', 'flex-shrink-0', cardClass]}
+            data-provider={entry.provider}
+            style={entry.provider === selectedProvider ? '' : 'display:none;'}
+          >
+            <article class="position-relative h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img
+                  src={entry.imageUrl}
+                  class="img-fluid"
+                  alt={entry.name}
+                  style="border-radius: 12px;"
+                />
+                <span class="post-date">
+                  {new Date(entry.lastUpdateDate).toLocaleDateString('en-GB', {
+                    day: 'numeric',
+                    month: 'short',
+                    year: 'numeric'
+                  })}
+                </span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                {entry.recommended && (
+                  <p class="recommendation-badge">
+                    <i class="bi bi-hand-thumbs-up-fill" aria-hidden="true"></i>
+                    Highly Recommended
+                  </p>
+                )}
+                <h3 class="post-title">
+                  Unlock Amazing Benefits with the <span class="fw-bold text-success">{entry.name}</span>!
+                </h3>
+                {entry.highlights && entry.highlights.length > 0 && (
+                  <ul>
+                    {entry.highlights.map((item) => <li>{item}</li>)}
+                  </ul>
+                )}
+                <hr />
+                <a href={entry.localPageUrl} class="readmore stretched-link">
+                  <span>Learn More</span><i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <script is:inline define:vars={{ selectId, cardClass, containerId }}>
+    const select = document.getElementById(selectId);
+    const cards = Array.from(document.querySelectorAll(`.${cardClass}`));
+    const container = document.getElementById(containerId);
+
+    function updateCards() {
+      const selectedBank = select?.value;
+
+      cards.forEach((entry) => {
+        entry.style.display = entry.dataset.provider === selectedBank ? '' : 'none';
+      });
+
+      container?.scrollTo({
+        left: 0,
+        behavior: 'auto'
+      });
+    }
+
+    select?.addEventListener('change', updateCards);
+    updateCards();
+  </script>
+</section>

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BrowseByBankSection from '../../../components/BrowseByBankSection.astro';
 import RecentPosts from '../../../components/RecentPosts.astro';
 import allCards from '../../../data/all-card-data.json';
 import type { Card } from '../../../types';
@@ -122,6 +123,12 @@ const descriptionHtml = card.description.replace(/\n/g, '<br />');
     <div class="row">
       <div class="col-12">
         <RecentPosts cards={cards} currentSlug={card.slug} />
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <BrowseByBankSection cards={cards} selectedProvider={card.provider} />
       </div>
     </div>
   </div>
