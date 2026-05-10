@@ -1,4 +1,39 @@
 <footer id="footer" class="footer dark-background">
+  <style>
+    .footer-support-qr {
+      width: 100%;
+      max-width: 240px;
+      height: auto;
+      border-radius: 16px;
+      display: block;
+    }
+
+    .footer-support-copy {
+      max-width: 280px;
+    }
+
+    .footer-support-link {
+      display: inline-block;
+      border: 0;
+      background: transparent;
+      padding: 0;
+    }
+
+    .footer-support-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin-top: 0.85rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 767.98px) {
+      .footer-support {
+        text-align: left;
+      }
+    }
+  </style>
+
   <div class="container footer-top">
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 footer-about">
@@ -20,15 +55,45 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-3 footer-links">
+      <div class="col-lg-4 col-md-6 footer-support">
+        <h4>Support Us</h4>
+        <p class="footer-support-copy mb-3">
+          DuitFirst is currently maintained completely for free and is supported by your generous tips.<br>
+          If this site has helped you, a small tip means a lot.<br>
+          Thank you for keeping this page going.
+        </p>
+        <button
+          type="button"
+          class="footer-support-link"
+          aria-label="Open DuitNow QR code in full size"
+          data-bs-toggle="modal"
+          data-bs-target="#footerSupportQrModal"
+        >
+          <img
+            src="/assets/img/duitnow-qr.jpg"
+            alt="DuitNow QR code to support DuitFirst"
+            class="footer-support-qr"
+            loading="lazy"
+          />
+        </button>
+        <div>
+          <a href="/assets/img/duitnow-qr.jpg" download class="footer-support-download">
+            <i class="bi bi-download"></i>
+            Download QR Code
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 footer-links">
         <h4>Useful Links</h4>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/contact/">Contact</a></li>
+          <li><a href="/support-us/">Support Us</a></li>
         </ul>
       </div>
 
-      <div class="col-lg-4 col-md-3 footer-links">
+      <div class="col-lg-2 col-md-6 footer-links">
         <h4>Credit Cards</h4>
         <ul>
           <li><a href="/#all-cards">All Cards</a></li>
@@ -45,5 +110,24 @@
       © 2026 <strong class="px-1 sitename">EXOBOLT VENTURES</strong>.
       <span>All Rights Reserved.</span>
     </p>
+  </div>
+
+  <div class="modal fade" id="footerSupportQrModal" tabindex="-1" aria-labelledby="footerSupportQrModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="footerSupportQrModalLabel">Support Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img
+            src="/assets/img/duitnow-qr.jpg"
+            alt="DuitNow QR code to support DuitFirst"
+            class="img-fluid"
+            style="border-radius: 18px;"
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </footer>

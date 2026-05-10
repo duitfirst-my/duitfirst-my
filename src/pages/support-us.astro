@@ -1,0 +1,126 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageTitle from '../components/PageTitle.astro';
+---
+
+<BaseLayout
+  title="Support Us"
+  description="Support DuitFirst with a small tip via DuitNow QR."
+  canonical="https://www.duitfirst.my/support-us/"
+  bodyClass="support-page"
+>
+  <Fragment slot="head">
+    <style>
+      .support-card {
+        max-width: 760px;
+        margin: 0 auto;
+        border: 1px solid rgba(25, 135, 84, 0.12);
+        border-radius: 24px;
+        padding: 2rem;
+        background: #fff;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.05);
+      }
+
+      .support-qr {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        border-radius: 16px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .support-qr-trigger {
+        display: inline-block;
+        border: 0;
+        background: transparent;
+        padding: 0;
+        border-radius: 16px;
+        overflow: hidden;
+        line-height: 0;
+        box-shadow: 0 0 0 1px rgba(25, 135, 84, 0.22);
+      }
+
+      .support-actions {
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 575.98px) {
+        .support-card {
+          padding: 1.5rem 1.25rem;
+        }
+
+        .support-actions a {
+          width: 100%;
+        }
+      }
+    </style>
+  </Fragment>
+
+  <main class="main">
+    <PageTitle title="Support Us" />
+
+    <section class="section">
+      <div class="container">
+        <div class="support-card text-center">
+          <h2 class="mb-3 text-success">Thank you for being here.</h2>
+          <p class="fs-5 mb-3">
+            DuitFirst is currently maintained completely for free and is supported by your generous tips.
+          </p>
+          <p class="mb-4">
+            If the site has helped you, a small tip would mean a lot and will help keep it running.
+          </p>
+          <p class="mb-4">
+            Thank you sincerely for the support.
+          </p>
+
+          <button
+            type="button"
+            class="support-qr-trigger mb-4"
+            data-bs-toggle="modal"
+            data-bs-target="#supportQrModal"
+            aria-label="Open DuitNow QR code in full size"
+          >
+            <img
+              src="/assets/img/duitnow-qr.jpg"
+              alt="DuitNow QR code to support DuitFirst"
+              class="support-qr"
+              loading="lazy"
+            />
+          </button>
+
+          <div class="support-actions">
+            <a href="/assets/img/duitnow-qr.jpg" download class="btn btn-success">
+              <i class="bi bi-download me-2"></i>Download QR Code
+            </a>
+            <a href="/" class="btn btn-outline-success">
+              Back to Home
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="supportQrModal" tabindex="-1" aria-labelledby="supportQrModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="supportQrModalLabel">Support Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img
+            src="/assets/img/duitnow-qr.jpg"
+            alt="DuitNow QR code to support DuitFirst"
+            class="img-fluid"
+            style="border-radius: 18px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
