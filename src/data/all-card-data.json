@@ -1143,5 +1143,155 @@
     },
     "provider": "maybank-islamic",
     "slug": "maybank-islamic-petronas-ikhwan-visa-platinum-card-i"
+  },
+  {
+    "lastUpdateDate": 1778382972000,
+    "localPageUrl": "/credit-cards/cimb-islamic/cimb-petronas-visa-platinum-i-credit-card/",
+    "name": "CIMB PETRONAS Visa Platinum-i Credit Card",
+    "description": "The CIMB PETRONAS Visa Platinum-i Credit Card is good for Malaysians who regularly spend at least RM500 per month on groceries, dining, and petrol.\nBest for those who prefers refuelling at Petronas stations, even better if monthly spending exceeds RM2000 per month.",
+    "imageUrl": "https://ringgitplus.com/img-v5/card-400/cimb-petronas-visa-platinum-i-credit-card-64ec25e4909d473f02007ab4.jpg",
+    "recommended": true,
+    "annualIncomeRequirementRM": 24000,
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          {
+            "key": "category",
+            "label": "Category"
+          },
+          {
+            "key": "reward",
+            "label": "Reward"
+          },
+          {
+            "key": "cap",
+            "label": "Monthly Cap"
+          },
+          {
+            "key": "minSpend",
+            "label": "Min Spend"
+          }
+        ],
+        "rows": [
+          {
+            "category": "PETRONAS transaction, Setel App transaction at PETRONAS, and EV Charging at PETRONAS stations",
+            "reward": "8% Cashback",
+            "cap": "RM50",
+            "minSpend": "from RM2,000 or above monthly"
+          },
+          {
+            "category": "PETRONAS transaction, Setel App transaction at PETRONAS, and EV Charging at PETRONAS stations",
+            "reward": "4% Cashback",
+            "cap": "RM50",
+            "minSpend": "from RM500 - RM1,999 monthly"
+          },
+          {
+            "category": "Groceries, Dining, and Cashless Parking",
+            "reward": "2% Cashback",
+            "cap": "RM50",
+            "minSpend": "from RM2,000 or above monthly"
+          },
+          {
+            "category": "Groceries, Dining, and Cashless Parking",
+            "reward": "1% Cashback",
+            "cap": "RM50",
+            "minSpend": "from RM500 - RM1,999 monthly"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "Multi-purpose cashback card, high spending high cashback",
+      "8% or 4% cashback on Petronas station transactions",
+      "2% or 1% cashback on Groceries, Dining, and Cashless Parking transactions",
+      "Maximum up to RM100 cashback per month (up to RM50 per category)",
+      "Free for Life - No annual fee"
+    ],
+    "original": {
+      "provider": "CIMB Islamic",
+      "url": "https://www.cimb.com.my/en/personal/day-to-day-banking/cards/credit-card/cimb-petronas-visa-platinum-i-credit-card.html"
+    },
+    "provider": "cimb-islamic",
+    "slug": "cimb-petronas-visa-platinum-i-credit-card"
+  },
+  {
+    "lastUpdateDate": 1778383727000,
+    "localPageUrl": "/credit-cards/cimb-islamic/cimb-petronas-visa-infinite-i-credit-card/",
+    "name": "CIMB PETRONAS Visa Infinite-i Credit Card",
+    "description": "The CIMB PETRONAS Visa Infinite-i Credit Card is good for Malaysians who regularly spend at least RM1500 per month on groceries, dining, and petrol.\nBest for those who prefers refuelling at Petronas stations, even better if monthly spending exceeds RM4000 per month.\nAlso, this card is great for free Plaza Premium Lounge access (no spending required), for those who travel frequently.",
+    "imageUrl": "https://ringgitplus.com/img-v5/card-400/cimb-petronas-visa-infinite-i-credit-card-64ec266e909d473f02007ab6.jpg",
+    "recommended": true,
+    "annualIncomeRequirementRM": 120000,
+    "tables": [
+      {
+        "title": "Cashback & Rewards",
+        "columns": [
+          {
+            "key": "category",
+            "label": "Category"
+          },
+          {
+            "key": "reward",
+            "label": "Reward"
+          },
+          {
+            "key": "cap",
+            "label": "Monthly Cap"
+          },
+          {
+            "key": "minSpend",
+            "label": "Min Spend"
+          }
+        ],
+        "rows": [
+          {
+            "category": "PETRONAS transaction, Setel App transaction at PETRONAS, and EV Charging at PETRONAS stations",
+            "reward": "12% Cashback",
+            "cap": "RM60",
+            "minSpend": "from RM4,000 or above monthly"
+          },
+          {
+            "category": "PETRONAS transaction, Setel App transaction at PETRONAS, and EV Charging at PETRONAS stations",
+            "reward": "6% Cashback",
+            "cap": "RM60",
+            "minSpend": "from RM1500 - RM3,999 monthly"
+          },
+          {
+            "category": "Groceries, Dining, and Cashless Parking",
+            "reward": "6% Cashback",
+            "cap": "RM60",
+            "minSpend": "from RM4,000 or above monthly"
+          },
+          {
+            "category": "Groceries, Dining, and Cashless Parking",
+            "reward": "3% Cashback",
+            "cap": "RM60",
+            "minSpend": "from RM1500 - RM3,999 monthly"
+          },
+          {
+            "category": "Overseas Spending",
+            "reward": "1% Cashback",
+            "cap": "Uncapped",
+            "minSpend": "from RM1,500 or above monthly"
+          }
+        ]
+      }
+    ],
+    "highlights": [
+      "Multi-purpose cashback card, high spending high cashback",
+      "12% or 6% cashback on Petronas station transactions",
+      "6% or 3% cashback on Groceries, Dining, and Cashless Parking transactions",
+      "Maximum up to RM120 cashback per month (up to RM60 per category)",
+      "1% cashback on overseas spending, no maximum cap, RM1500 minimum spend required",
+      "4x free Plaza Premium Lounge access per year (Shared between Principal & Supplementary, no spending required)",
+      "Free for Life - No annual fee"
+    ],
+    "original": {
+      "provider": "CIMB Islamic",
+      "url": "https://www.cimb.com.my/en/personal/day-to-day-banking/cards/credit-card/cimb-petronas-visa-infinite-i-credit-card.html"
+    },
+    "provider": "cimb-islamic",
+    "slug": "cimb-petronas-visa-infinite-i-credit-card"
   }
 ]
